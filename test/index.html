@@ -262,7 +262,22 @@ isNaN(b)?!0:a>b};this._resetAlt=function(a,b){var d=a.getAttribute("alt"),c=d&&0
             <a href=""  target="_blank">
           
             <div style="padding-bottom:100.0%;" class="image-block-wrapper   has-aspect-ratio" data-description="Broken Love" >
-              <noscript><img src="/assets/img/brokenlove.jpg"  alt="brokenlove.jpg"  /></noscript><img class="thumb-image" alt="brokenlove.jpg" data-src="/assets/img/brokenlove.jpg" data-image="/assets/img/brokenlove.jpg" data-image-dimensions="600x600" data-image-focal-point="0.5,0.5" data-load="false" data-image-id="58d5afbb20099e23c0d1228d" data-type="image" />
+              <noscript><img src="/assets/img/brokenlove.jpg"  alt="brokenlove.jpg" id="imgClickAndChange" onclick="changeImage()" /></noscript><img class="thumb-image" alt="brokenlove.jpg" data-src="/assets/img/brokenlove.jpg" data-image="/assets/img/brokenlove.jpg" data-image-dimensions="600x600" data-image-focal-point="0.5,0.5" data-load="false" data-image-id="58d5afbb20099e23c0d1228d" data-type="image" id="imgClickAndChange" onclick="changeImage()" />
+
+              <script language="javascript">
+    				function changeImage() {
+
+        				if (document.getElementById("imgClickAndChange").src == "http://glutenfreeradio.co/assets/img/brokenlove.jpg") 
+        				{
+            				document.getElementById("imgClickAndChange").src = "http://glutenfreeradio.co/assets/img/brokenlovecomingsoon.jpg";
+        				}
+        				else 
+        				{
+            				document.getElementById("imgClickAndChange").src = "http://glutenfreeradio.co/assets/img/brokenlove.jpg";
+        				}
+    				}
+			</script>
+
             </div>
           
             </a>
