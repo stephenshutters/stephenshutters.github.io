@@ -94,7 +94,7 @@ label {
 	</style>
 
 	<script>
-		function deselect(e) {
+function deselect(e) {
   $('.pop').slideFadeToggle(function() {
     e.removeClass('selected');
   });    
@@ -317,7 +317,7 @@ $.fn.slideFadeToggle = function(easing, callback) {
 			</div>
 
           
-            <a href="" id="comingsoon" target="_blank">
+            <a href="" id="comingsoon" onclick="deselect(e)" target="_blank">
           
             <div style="padding-bottom:100.0%;" class="image-block-wrapper   has-aspect-ratio" data-description="Broken Love" >
               <noscript><img src="/assets/img/brokenlove.jpg"  alt="brokenlove.jpg"  /></noscript><img class="thumb-image" alt="brokenlove.jpg" data-src="/assets/img/brokenlove.jpg" data-image="/assets/img/brokenlove.jpg" data-image-dimensions="600x600" data-image-focal-point="0.5,0.5" data-load="false" data-image-id="58d5afbb20099e23c0d1228d" data-type="image" />
