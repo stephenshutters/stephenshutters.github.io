@@ -34,10 +34,10 @@
 
 
   // Parse out file name from path, unescape
-  function parseTitle(path) {
-    path = decodeURI(path);
-    return path.split('/').pop().split('.').shift();
-  }
+  //function parseTitle(path) {
+    //path = decodeURI(path);
+    //return path.split('/').pop().split('.').shift();
+  //}
 
   // Object to represent bbplayer
   var BBPlayer = function (elem) {
