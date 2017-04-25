@@ -22,7 +22,7 @@ Optional styling for bbplayer elements.
   border: 6px solid #CFCFCF;
   border-radius: 50%; 
   background: transparent; 
-  background-image: url('../images/play.png');
+  background-image: url('/assets/img/icons/play.png');
   background-repeat: no-repeat;
   background-position: 7px center;
   cursor: pointer;
@@ -30,7 +30,7 @@ Optional styling for bbplayer elements.
 
 .bb-playing {
   vertical-align: middle;
-  background-image: url('../images/pause.png');
+  background-image: url('/assets/img/icons/pause.png');
   background-position: center center;
 }
 
@@ -40,7 +40,7 @@ Optional styling for bbplayer elements.
   height: 32px;
   width:  32px;
   background: transparent;
-  background-image: url('../images/forward.png');
+  background-image: url('/assets/img/icons/forward.png');
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
@@ -52,7 +52,7 @@ Optional styling for bbplayer elements.
   height: 32px;
   width:  32px;
   background: transparent;
-  background-image: url('../images/rewind.png');
+  background-image: url('/assets/img/icons/rewind.png');
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
