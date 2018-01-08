@@ -12711,7 +12711,7 @@ h3 a:hover,h3 a:focus{
 }
 .collection-type-template-page #title-area h1 img{
     max-width:100%;
-    opacity:0;
+    opacity:1;
     -webkit-transition:opacity .2s ease;
     -moz-transition:opacity .2s ease;
     -o-transition:opacity .2s ease;
