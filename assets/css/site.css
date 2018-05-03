@@ -12670,7 +12670,7 @@ h3 a:hover,h3 a:focus{
     display:none
 }
 .collection-type-template-page #title-area{
-    opacity:0;
+    opacity:1;
     -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     position:absolute;
     width:90%;
