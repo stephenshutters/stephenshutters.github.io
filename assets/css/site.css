@@ -13374,14 +13374,14 @@ html.no-touch .pagination .left.hide,html.no-touch .pagination .right.hide{
     font-weight:400;
     line-height:1.25em;
     letter-spacing:4px;
-    font-family:"proxima-nova";
+    font-family:proxima-nova;
+    font-weight:300;
+    font-style:normal;
     font-size:13px;
     line-height:1.5em;
     text-transform:uppercase;
-    text-decoration:none;
     letter-spacing:3px;
-    font-weight:300;
-    font-style:normal;
+    text-decoration:none;
     list-style-type:none
 }
 #main-navigation ul li a,#main-navigation ul li a:visited{
@@ -13438,14 +13438,14 @@ html.no-touch .pagination .left.hide,html.no-touch .pagination .right.hide{
     font-weight:400;
     line-height:1.25em;
     letter-spacing:4px;
-    font-family:"proxima-nova";
+    font-family:proxima-nova;
+    font-weight:300;
+    font-style:normal;
     font-size:13px;
     line-height:1.5em;
     text-transform:uppercase;
-    text-decoration:none;
     letter-spacing:3px;
-    font-weight:300;
-    font-style:normal
+    text-decoration:none
 }
 #mobile-navigation ul{
     margin:2em 0 0 !important
@@ -13456,14 +13456,14 @@ html.no-touch .pagination .left.hide,html.no-touch .pagination .right.hide{
     font-weight:400;
     line-height:1.25em;
     letter-spacing:4px;
-    font-family:"proxima-nova";
+    font-family:proxima-nova;
+    font-weight:300;
+    font-style:normal;
     font-size:13px;
     line-height:1.5em;
     text-transform:uppercase;
-    text-decoration:none;
     letter-spacing:3px;
-    font-weight:300;
-    font-style:normal
+    text-decoration:none
 }
 #mobile-navigation ul li a,#mobile-navigation ul li a:visited{
     color:rgba(255,255,255,.6)
