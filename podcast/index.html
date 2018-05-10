@@ -1,511 +1,83 @@
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Gluten Free Radio Podcast</title>
-    <link href="http://smarturl.it/_static/styles/compiled/podcast-styles.css" rel="stylesheet"/>
-    <style type="text/css">
-
-
-    .bg {
-
-        background-image: url('http://glutenfreeradio.co/assets/img/background.jpg');
-
-
-
-        opacity: 30
-
-    }
-
-
-    .retailer_344.retailer-logo {
-
-           background-image: url('http://smarturl.it/_retailerLogo/344_5_LogoRetina');
-           background-size: 150px 50px;
-
-
-    }
-    .retailer_50.retailer-logo {
-
-           background-image: url('http://smarturl.it/_retailerLogo/50_2_LogoRetina');
-           background-size: 138px 27px;
-
-
-    }
-    .retailer_342.retailer-logo {
-
-           background-image: url('http://smarturl.it/_retailerLogo/342_1_LogoRetina');
-           background-size: 150px 50px;
-
-
-    }
-    .retailer_279.retailer-logo {
-
-           background-image: url('http://smarturl.it/_retailerLogo/279_0_LogoRetina');
-           background-size: 145px 14px;
-
-
-    }
-    .retailer_9.retailer-logo {
-
-           background-image: url('http://smarturl.it/_retailerLogo/9_5_LogoRetina');
-           background-size: 89px 51px;
-
-
-    }
-
-
-
-
-
-
-
-    .current-track {
-        background: #ffffff;
-    }
-
-    .metadata img,
-    .youtube-container,
-    .featured-episode__image,
-    .podcast__header-image,
-    .social-links__overlay-image {
-        border-color: #ffffff;
-    }
-
-
-
-    .metadata img,
-    .youtube-container {
-        border-width: 0px;
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    .featured-episode__image {
-        border-width: 0px;
-    }
-
-
-
-
-
-
-
-
-
-
-</style>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <meta property="og:title" content="Gluten Free Radio Podcast"/>
-    <meta property="og:image" content="https://is3-ssl.mzstatic.com/image/thumb/Music115/v4/4d/39/6e/4d396ebc-b550-34af-fa53-7562a596bf02/source/600x600bb.jpg"/>
-    <meta property="og:description" content="Birthed in the Metro Atlanta music scene, Gluten Free Radio functions as both an independent artist collective and a source for reviews on current albums. This is their podcast."/>
-    <meta name="twitter:card" content="summary" />
-    <meta property="twitter:image" content="https://is3-ssl.mzstatic.com/image/thumb/Music115/v4/4d/39/6e/4d396ebc-b550-34af-fa53-7562a596bf02/source/600x600bb.jpg"/>
-    <meta property="twitter:title" content="Gluten Free Radio Podcast"/>
-    <meta property="twitter:description" content="Birthed in the Metro Atlanta music scene, Gluten Free Radio functions as both an independent artist collective and a source for reviews on current albums. This is their podcast."/>
-    <meta name="description" content="Birthed in the Metro Atlanta music scene, Gluten Free Radio functions as both an independent artist collective and a source for reviews on current albums. This is their podcast."/>
-
-</head>
-<body>
-<div class="wrapper">
-    <div class="bg"></div>
-    <div id="podcast-container"></div>
-    <div id="podcast-overlay"></div>
-    <div class="push"></div>
-</div>
-
-<div id="notification-banners">
-    <div id="notification-banners-wrap">
-        <div id="cookie-banner-cta"></div>
-    </div>
-</div>
-
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="display:none;" preserveAspectRatio="xMinYMid">
-    <symbol id="icon-x-remove" viewBox="0 0 5.5 5.5">
-        <title>X Icon</title>
-        <path d="M5.3,0.8L0.8,5.3C0.7,5.4,0.4,5.4,0.2,5.2L0.2,5.1C0,4.9-0.1,4.7,0.1,4.6l4.5-4.5C4.7-0.1,4.9,0,5.1,0.2l0.1,0.1C5.4,0.4,5.4,0.7,5.3,0.8z"></path>
-        <path d="M4.6,5.3L0.1,0.8C-0.1,0.7,0,0.4,0.2,0.2l0.1-0.1C0.4,0,0.7-0.1,0.8,0.1l4.5,4.5c0.1,0.1,0.1,0.4-0.1,0.5L5.1,5.2C4.9,5.4,4.7,5.4,4.6,5.3z"></path>
-    </symbol>
-</svg>
-
-<div id="pixels" style="display:none"></div>
-<iframe id="deep-link-test" style="display:none;"></iframe>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="display:none;" preserveAspectRatio="xMinYMid">
-    <symbol id="icon-x" viewBox="0 0 14 14">
-        <title>X</title>
-        <path d="M7,0C3.142,0,0,3.142,0,7s3.142,7,7,7s7-3.142,7-7S10.858,0,7,0z M9.753,8.68L8.649,9.784L7,8.136L5.351,9.784L4.247,8.68l1.649-1.649L4.247,5.382l1.104-1.104L7,5.927l1.649-1.649l1.104,1.104L8.104,7.031L9.753,8.68z"></path>
-    </symbol>
-</svg>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="display:none;" preserveAspectRatio="xMinYMid">
-
-    <symbol id="icon-arrow-circle-left" viewBox="0 0 40 40">
-        <g>
-            <path d="M20,40C8.97,40,0,31.03,0,20S8.97,0,20,0s20,8.97,20,20S31.03,40,20,40z M20,2C10.08,2,2,10.07,2,20c0,9.92,8.08,18,18,18s18-8.08,18-18C38,10.07,29.92,2,20,2z"></path>
-        </g>
-        <polygon points="22.64,14.69 21.22,13.28 14.28,20.22 21.22,27.16 22.64,25.74 17.11,20.22 "></polygon>
-    </symbol>
-
-    <symbol id="icon-arrow-circle-right" viewBox="0 0 40 40">
-        <g>
-            <path d="M20,40C8.97,40,0,31.03,0,20S8.97,0,20,0s20,8.97,20,20S31.03,40,20,40z M20,2C10.08,2,2,10.07,2,20c0,9.92,8.08,18,18,18s18-8.08,18-18C38,10.07,29.92,2,20,2z"></path>
-        </g>
-        <polygon points="16.28,25.74 17.7,27.16 24.64,20.22 17.7,13.28 16.28,14.69 21.81,20.22 "></polygon>
-    </symbol>
-
-</svg>
-
-<script type="text/javascript">
-    window.isPreview = false;
-</script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js" type="text/javascript"></script>
-<script src="/_static/scripts/compiled/vendor.js?v=2.2.1" type="text/javascript"></script>
-
-    <script src="/_static/scripts/compiled/retargeting.js?v=2.2.1" type="text/javascript"></script>
-
-
-    <script type="text/javascript">
-        if (window.Retargeting) {
-            window.renderInfo = {"renderId":"994702348390096897","smartUrlId":4211338,"timestamp":1525990495189,"requestUrl":"\u002Fglutenfreeradiopod","params":"{}","userAgent":"Mozilla\u002F5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit\u002F537.36 (KHTML, like Gecko) Chrome\u002F66.0.3359.139 Safari\u002F537.36","responseTimeNanos":49197,"responseCode":301,"destinationUrl":"http:\u002F\u002Fsmarturl.it\u002Fglutenfreeradiopod","requestMethod":"GET","quiet":false,"codeOrAlias":"glutenfreeradiopod","requesterId":991826221597544450,"clickDelta":13816,"replaceId":0,"dispatchProperty":"RET","ipAddress":"99.47.126.125","countryCode":"US","city":"Cumming","province":"GA","postCode":"30040","lat":34.228104,"lng":-84.178,"locationType":1,"deviceCategory":"pc","deviceOS":"Mac OSX","deviceOSVersion":"10.11.6","browser":"Chrome","browserVersion":"66.0.3359.139"};
-            Retargeting.init([], {
-                    alias: "glutenfreeradiopod",
-                    user_country: "US" || 'unknown',
-                    user_province: "GA" || 'unknown',
-                    user_city: "Cumming" || 'unknown',
-                    user_postal_code: "30040" || 'unknown'
-                }, [{"attrName":{"name":"artist"},"value":"gluten free radio","startEpoch":0,"endEpoch":1000000000000,"displayOrder":0},{"attrName":{"name":"album"},"value":"gluten free radio","startEpoch":0,"endEpoch":1000000000000,"displayOrder":0},{"attrName":{"name":"song"},"value":"gluten free radio","startEpoch":0,"endEpoch":1000000000000,"displayOrder":0},{"attrName":{"name":"genre"},"value":"music","startEpoch":0,"endEpoch":1000000000000,"displayOrder":0}]
-            );
-        }
-    </script>
-    <noscript>
-
-
-    </noscript>
-
-
-
-
-<script src="https://use.typekit.net/xyo0dqo.js"></script>
-<script>try{Typekit.load({ async: true });}catch(e){}</script>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="display:none;" preserveAspectRatio="xMinYMid">
-    <filter id="blur">
-        <feGaussianBlur stdDeviation="23"></feGaussianBlur>
-    </filter>
-</svg>
-
-    <script type="text/javascript">
-        function LinkDecorator() {};
-        LinkDecorator.prototype.decorate = function (url) {
-            return url;
-        };
-        window.linkDecorator = new LinkDecorator();
-
-        window.smartURL = {
-            navigateTo: function (url) {
-                var deeplink = this.checkSupportedDeepLinks(url);
-                if (deeplink === null || this.isIOS()) {
-                    this.openURL(linkDecorator.decorate(url));
-                } else {
-                    this.openDeepLink(deeplink);
-                }
-            },
-            openURL: function (url) {
-                if (this.isIE8()) {
-                    var link = document.createElement('a');
-                    link.href = url;
-                    document.body.appendChild(link);
-                    link.click();
-                } else {
-                    window.top.location.href = url;
-                }
-            },
-            openDeepLink: function (deeplink) {
-                var leftPage = false, timeStarted = new Date(), iframe;
-                window.onblur = function () {
-                    leftPage = true;
-                };
-                window.onfocus = function () {
-                    // if user returns after waiting a while (10 seconds),
-                    // then do nothing
-                    var now = new Date();
-                    var leftPageForWhile = (now.getTime() - timeStarted.getTime()) > 10000;
-                    if (leftPageForWhile) {
-                        return;
-                    }
-                    // if user left the page but returned quickly
-                    // this likely means the user said no or the app did not open
-                    if (leftPage) {
-                        this.openURL(deeplink.web);
-                    }
-                }.bind(this);
-                window.setTimeout(function () {
-                    // didnt open anything (prompt, app, etc), so use the web url
-                    if (leftPage === false) {
-                        this.openURL(deeplink.web);
-                    }
-                }.bind(this), 500);
-                iframe = document.getElementById('deep-link-test');
-                if (iframe) {
-                    // set the iframe to trigger the browser prompt
-                    // or open the app;
-                    // either will trigger window blur
-                    iframe.setAttribute('src', deeplink.deep);
-                } else {
-                    this.openURL(deeplink.deep);
-                }
-            },
-            retailerSelected: function (internalName, destUrl, imageUrl) {
-                var handleNavigation = function () {
-                    smartURL.navigateTo(destUrl);
-                };
-                if (window.Retargeting) {
-                    Retargeting.trackEvent('SelectedRetailer', {
-                        selected_retailer: internalName
-                    }, [imageUrl]).then(handleNavigation);
-                } else {
-                    handleNavigation();
-                }
-            },
-            offerSelected: function (offerId, destUrl, imageUrl) {
-              var handleNavigation = function () {
-                  smartURL.navigateTo(destUrl);
-              };
-
-              if(window.Retargeting) {
-                  Retargeting.trackEvent('SelectedOffer', {
-                      selected_offer: offerId
-                  }, [imageUrl]).then(handleNavigation);
-              } else {
-                  handleNavigation();
-              }
-            },
-            outboundClick: function (destUrl, imageUrl) {
-                var handleNavigation = function () {
-                    smartURL.navigateTo(destUrl);
-                };
-                if (window.Retargeting) {
-                    Retargeting.trackEvent('OutboundClick', {
-                        outbound_url: destUrl
-                    }, [imageUrl]).then(handleNavigation);
-                } else {
-                    handleNavigation();
-                }
-            },
-            socialClick: function (destUrl, imageUrl) {
-                if (window.Retargeting) {
-                    Retargeting.trackEvent('SocialClick', {
-                        social_url: destUrl
-                    }, [imageUrl]);
-                }
-            },
-            checkSupportedDeepLinks: function (url) {
-                var tests = [this.spotifyDeepLinkTest];
-                for (var i=0; i < tests.length;i++) {
-                    var test = tests[i], result = test.call(this, url);
-                    if (result !== null) {
-                        // return the deeplink object
-                        return result;
-                    }
-                }
-                return null;
-            },
-            spotifyDeepLinkTest: function (url) {
-                if (url.indexOf('//open.spotify.com') >= 0 || url.indexOf('//play.spotify.com') >= 0) {
-                    // using a regular spotify link,
-                    // create a deeplink
-                    return {deep: this.mapSpotifyUrlToDeepLink(url), web: url};
-                } else if (url.indexOf('spotify:') === 0) {
-                    return {deep: url, web: this.mapSpotifyDeepLinkToUrl(url)};
-                }
-                return null;
-            },
-            mapSpotifyUrlToDeepLink: function (url) {
-                var newLink = 'spotify';
-                var suffix = (url.slice(url.indexOf('.com') + 4)).replace(/\//g, ':');
-                return newLink + suffix;
-            },
-            mapSpotifyDeepLinkToUrl: function (url) {
-                var suffix = (url.slice(url.indexOf('spotify:') + 8)).replace(/\:/g, '/');
-                return 'https://open.spotify.com/' + suffix;
-            },
-            isIOS: function () {
-                return !!navigator.userAgent.match(/iPhone|iPad|iPod/i);
-            },
-            isIE8: function () {
-                var ua = navigator.userAgent.toLowerCase(),
-                    isIE = ua.indexOf('msie') !== -1,
-                    version = parseInt(ua.substr(4, 2), 10);
-                return isIE && version <= 8;
-            },
-            setCookie: function (name, value, secondsToLive) {
-                var lifetime = secondsToLive || 60 * 60 * 24 * 30; // 30 days default
-                var d = new Date();
-                d.setTime(d.getTime() + lifetime * 1000);
-                var cookie = name + '=' + value + ';domain=' + window.location.hostname + ';path=/;max-age=' + lifetime + ';expires=' + d.toGMTString();
-                document.cookie = cookie;
-            },
-            clearCookie: function (name) {
-                this.setCookie(name, '', -1);
-            }
-        };
-    </script>
-
-
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="display:none;" preserveAspectRatio="xMinYMid">
-    <symbol id="icon-socials-link-facebook" viewBox="0 0 14 14">
-        <g>
-            <path d="M7,0C3.14,0,0,3.14,0,7s3.14,7,7,7s7-3.14,7-7S10.86,0,7,0z M9.06,4.58H7.88c-0.14,0-0.29,0.18-0.29,0.43v0.85h1.47v1.21H7.59v3.64H6.2V7.07H4.94V5.86H6.2V5.15c0-1.02,0.71-1.85,1.68-1.85h1.18V4.58z"></path>
-        </g>
-    </symbol>
-
-    <symbol id="icon-socials-link-googleplus" viewBox="0 0 14 14">
-        <g>
-            <path d="M7,0C3.14,0,0,3.14,0,7s3.14,7,7,7s7-3.14,7-7S10.86,0,7,0z M8.05,7.07L8.05,7.07c0,0.73-0.25,1.36-0.68,1.8c-0.43,0.44-1.05,0.7-1.79,0.7h0c-0.72,0-1.36-0.29-1.83-0.75C3.29,8.36,3,7.72,3,7s0.29-1.36,0.75-1.83c0.46-0.46,1.11-0.75,1.83-0.75c0.34,0,0.66,0.06,0.95,0.18c0.3,0.12,0.56,0.3,0.79,0.52l0.06,0.06L7.31,5.25L6.63,5.89L6.57,5.94L6.51,5.89c-0.09-0.09-0.23-0.2-0.42-0.27C5.95,5.56,5.78,5.52,5.58,5.52c-0.4,0-0.76,0.17-1.02,0.43C4.29,6.22,4.13,6.59,4.13,7s0.16,0.78,0.43,1.05c0.26,0.27,0.62,0.43,1.02,0.43c0.38,0,0.67-0.11,0.87-0.26C6.7,8.03,6.83,7.78,6.89,7.58H5.58H5.49V7.5V6.64V6.56h0.09h2.35h0.07l0.02,0.06C8.05,6.78,8.05,6.89,8.05,7.07L8.05,7.07z M11,6.64v0.71v0.09h-0.09h-0.63v0.63v0.09H10.2H9.49H9.41V8.07V7.44H8.78H8.69V7.36V6.64V6.56h0.09h0.63V5.93V5.85h0.09h0.71h0.09v0.09v0.63h0.63H11V6.64z"></path>
-        </g>
-    </symbol>
-
-
-    <symbol id="icon-socials-link-instagram" viewBox="0 0 14 14">
-        <g>
-            <path d="M6.989,5.54c-0.013,0-0.026-0.001-0.04-0.001c-0.354,0-0.69,0.138-0.952,0.392C5.714,6.207,5.552,6.592,5.552,6.989c0,0.799,0.65,1.448,1.448,1.448c0.794,0,1.43-0.64,1.448-1.456c0.009-0.412-0.109-0.761-0.343-1.01C7.855,5.703,7.469,5.554,6.989,5.54z"></path>
-            <path d="M8.652,3.491H5.349c-0.963,0-1.747,0.783-1.747,1.746v3.525c0,0.963,0.783,1.746,1.747,1.746h3.303c0.963,0,1.746-0.783,1.746-1.746V5.238C10.398,4.275,9.615,3.491,8.652,3.491z M8.537,8.532C8.127,8.945,7.582,9.173,7,9.173c-1.204,0-2.184-0.98-2.184-2.184c0-0.594,0.244-1.172,0.669-1.585C5.9,5.001,6.442,4.788,7.011,4.805c0.68,0.02,1.245,0.249,1.632,0.663C9.01,5.86,9.198,6.388,9.184,6.997C9.171,7.579,8.942,8.124,8.537,8.532z M9.237,5.252c-0.281,0-0.51-0.228-0.51-0.509s0.228-0.509,0.51-0.509c0.281,0,0.51,0.228,0.51,0.509S9.519,5.252,9.237,5.252z"></path>
-            <path d="M7,0C3.14,0,0,3.14,0,7s3.14,7,7,7s7-3.14,7-7S10.86,0,7,0z M11,8.762c0,1.295-1.053,2.348-2.348,2.348H5.349C4.053,11.111,3,10.057,3,8.762V5.238c0-1.295,1.053-2.349,2.349-2.349h3.303C9.947,2.889,11,3.943,11,5.238V8.762z"></path>
-        </g>
-    </symbol>
-
-    <symbol id="icon-socials-link-linkedin" viewBox="0 0 14 14">
-        <g>
-            <path d="M7,0C3.14,0,0,3.14,0,7s3.14,7,7,7s7-3.14,7-7S10.86,0,7,0z M5.34,10H4.1V5.99h1.24V10z M4.72,5.44C4.32,5.44,4,5.12,4,4.72C4,4.32,4.32,4,4.72,4c0.4,0,0.72,0.32,0.72,0.72C5.44,5.12,5.12,5.44,4.72,5.44z M10,10H8.76V8.05c0-0.46-0.01-1.06-0.65-1.06c-0.65,0-0.75,0.51-0.75,1.03V10H6.12V5.99h1.19v0.55h0.02C7.5,6.22,7.9,5.89,8.51,5.89C9.77,5.89,10,6.72,10,7.8V10z"></path>
-        </g>
-    </symbol>
-
-    <symbol id="icon-socials-link-share" viewBox="0 0 14 14">
-        <g>
-            <path d="M7,0C3.14,0,0,3.14,0,7s3.14,7,7,7s7-3.14,7-7S10.86,0,7,0z M5.75,7c0,0.16-0.03,0.32-0.09,0.47l1.97,0.99c0.25-0.27,0.6-0.43,1-0.43C9.39,8.02,10,8.64,10,9.4s-0.61,1.37-1.37,1.37c-0.76,0-1.37-0.61-1.37-1.37c0-0.08,0.01-0.16,0.02-0.24L5.18,8.1C4.96,8.27,4.68,8.37,4.37,8.37C3.62,8.37,3,7.76,3,7s0.62-1.37,1.37-1.37c0.32,0,0.61,0.11,0.84,0.29l2.06-1.06C7.26,4.77,7.25,4.69,7.25,4.6c0-0.76,0.62-1.37,1.37-1.37C9.39,3.23,10,3.84,10,4.6S9.39,5.98,8.63,5.98c-0.39,0-0.74-0.16-0.99-0.42L5.67,6.57C5.72,6.71,5.75,6.85,5.75,7z"></path>
-        </g>
-    </symbol>
-
-    <symbol id="icon-socials-link-snapchat" viewBox="0 0 14 14">
-        <g>
-            <path d="M7,0C3.14,0,0,3.14,0,7s3.14,7,7,7s7-3.14,7-7S10.86,0,7,0z M10.98,9.14c-0.08,0.19-0.43,0.33-1.05,0.43C9.91,9.59,9.89,9.69,9.87,9.75C9.86,9.81,9.85,9.87,9.83,9.94c-0.03,0.09-0.09,0.14-0.19,0.14h0l0,0c-0.04,0-0.11-0.01-0.18-0.02c-0.12-0.02-0.26-0.05-0.43-0.05c-0.1,0-0.2,0.01-0.31,0.03c-0.2,0.03-0.37,0.16-0.57,0.3c-0.28,0.2-0.61,0.43-1.1,0.43c-0.02,0-0.04,0-0.06,0c-0.01,0-0.03,0-0.04,0c-0.49,0-0.81-0.23-1.1-0.43c-0.2-0.14-0.37-0.26-0.57-0.3c-0.1-0.02-0.21-0.03-0.31-0.03c-0.18,0-0.32,0.03-0.43,0.05c-0.07,0.01-0.13,0.03-0.18,0.03c-0.13,0-0.18-0.08-0.19-0.14C4.15,9.88,4.14,9.81,4.13,9.75C4.11,9.69,4.09,9.59,4.07,9.56C3.44,9.47,3.1,9.33,3.02,9.14C3.01,9.11,3,9.09,3,9.06C3,8.98,3.06,8.9,3.14,8.89c1.09-0.18,1.58-1.3,1.6-1.34c0,0,0-0.01,0-0.01C4.8,7.42,4.81,7.32,4.78,7.24C4.72,7.1,4.48,7.02,4.33,6.97C4.29,6.96,4.25,6.95,4.22,6.94c-0.37-0.15-0.42-0.31-0.4-0.43C3.85,6.35,4.04,6.24,4.2,6.24c0.05,0,0.09,0.01,0.13,0.03c0.14,0.07,0.26,0.1,0.37,0.1c0.08,0,0.13-0.02,0.16-0.03c0-0.06-0.01-0.13-0.01-0.19c-0.03-0.54-0.08-1.22,0.1-1.62c0.53-1.18,1.65-1.27,1.98-1.27c0.01,0,0.14,0,0.14,0c0.01,0,0.01,0,0.02,0h0c0.33,0,1.45,0.09,1.98,1.28c0.18,0.4,0.14,1.07,0.1,1.62l0,0.02c0,0.06-0.01,0.12-0.01,0.17c0.02,0.01,0.07,0.03,0.13,0.03c0.1,0,0.22-0.04,0.34-0.1c0.05-0.03,0.11-0.03,0.15-0.03c0.06,0,0.12,0.01,0.17,0.03l0,0c0.15,0.05,0.24,0.16,0.24,0.28c0,0.15-0.13,0.28-0.4,0.39C9.75,6.95,9.71,6.96,9.67,6.97C9.52,7.02,9.28,7.1,9.22,7.24C9.19,7.32,9.2,7.42,9.26,7.54c0,0,0,0.01,0,0.01c0.02,0.05,0.51,1.16,1.6,1.34C10.94,8.9,11,8.98,11,9.06C11,9.09,10.99,9.11,10.98,9.14z"></path>
-        </g>
-    </symbol>
-
-    <symbol id="icon-socials-link-twitter" viewBox="0 0 14 14">
-        <g>
-            <path d="M7,0C3.14,0,0,3.14,0,7s3.14,7,7,7s7-3.14,7-7S10.86,0,7,0z M10.18,5.37c0,0.07,0,0.14,0,0.21c0,2.17-1.65,4.67-4.67,4.67c-0.93,0-1.79-0.27-2.52-0.74c0.13,0.02,0.26,0.02,0.39,0.02c0.77,0,1.48-0.26,2.04-0.7C4.71,8.82,4.11,8.35,3.9,7.69C4,7.71,4.1,7.72,4.21,7.72c0.15,0,0.29-0.02,0.43-0.06C3.89,7.52,3.32,6.85,3.32,6.06c0-0.01,0-0.01,0-0.02c0.22,0.12,0.47,0.2,0.74,0.21c-0.44-0.29-0.73-0.8-0.73-1.37c0-0.3,0.08-0.58,0.22-0.82C4.37,5.04,5.58,5.7,6.94,5.76C6.91,5.64,6.9,5.52,6.9,5.39c0-0.91,0.73-1.64,1.64-1.64c0.47,0,0.9,0.2,1.2,0.52c0.37-0.07,0.72-0.21,1.04-0.4c-0.12,0.38-0.38,0.7-0.72,0.91c0.33-0.04,0.65-0.13,0.94-0.26C10.78,4.85,10.5,5.14,10.18,5.37z"></path>
-        </g>
-    </symbol>
-
-    <symbol id="icon-socials-link-website" viewBox="0 0 14 14">
-        <g>
-            <path d="M5.08,4.31c0.5,0.17,1.03,0.26,1.59,0.29V2.58C6.04,2.74,5.47,3.36,5.08,4.31z"></path>
-            <path d="M11.45,6.67c-0.06-0.89-0.39-1.72-0.94-2.42c-0.24,0.17-0.5,0.31-0.77,0.44c0.19,0.62,0.29,1.28,0.32,1.98H11.45z"></path>
-            <path d="M10.07,3.76c-0.35-0.33-0.75-0.6-1.18-0.81c0.24,0.32,0.46,0.69,0.63,1.11C9.71,3.98,9.9,3.88,10.07,3.76z"></path>
-            <path d="M7.33,2.58v2.03c0.55-0.03,1.09-0.13,1.59-0.29C8.53,3.36,7.96,2.74,7.33,2.58z"></path>
-            <path d="M6.67,11.42V9.39C6.12,9.42,5.58,9.52,5.08,9.69C5.47,10.64,6.04,11.26,6.67,11.42z"></path>
-            <path d="M3.93,10.24c0.35,0.33,0.75,0.6,1.18,0.81c-0.24-0.32-0.46-0.69-0.63-1.11C4.29,10.02,4.1,10.12,3.93,10.24z"></path>
-            <path d="M2.55,7.33c0.06,0.89,0.39,1.72,0.94,2.42c0.24-0.17,0.5-0.31,0.77-0.44C4.07,8.69,3.96,8.03,3.94,7.33H2.55z"></path>
-            <path d="M4.6,6.67h2.07v-1.4c-0.63-0.03-1.23-0.14-1.8-0.33C4.71,5.48,4.62,6.06,4.6,6.67z"></path>
-            <path d="M6.67,8.73v-1.4H4.6c0.02,0.61,0.12,1.19,0.27,1.73C5.44,8.87,6.04,8.76,6.67,8.73z"></path>
-            <path d="M5.11,2.96c-0.43,0.2-0.83,0.48-1.18,0.81C4.1,3.88,4.29,3.98,4.48,4.07C4.66,3.65,4.87,3.27,5.11,2.96z"></path>
-            <path d="M3.48,4.25c-0.55,0.7-0.87,1.53-0.94,2.42h1.39c0.03-0.69,0.13-1.36,0.32-1.98C3.98,4.56,3.72,4.42,3.48,4.25z"></path>
-            <path d="M7.33,9.39v2.03c0.63-0.16,1.2-0.78,1.59-1.73C8.42,9.52,7.88,9.42,7.33,9.39z"></path>
-            <path d="M9.4,7.33H7.33v1.4c0.63,0.03,1.23,0.14,1.8,0.33C9.29,8.52,9.38,7.94,9.4,7.33z"></path>
-            <path d="M8.89,11.04c0.43-0.2,0.83-0.48,1.18-0.81c-0.17-0.11-0.35-0.22-0.55-0.31C9.34,10.35,9.13,10.73,8.89,11.04z"></path>
-            <path d="M10.06,7.33c-0.03,0.69-0.13,1.36-0.32,1.98c0.27,0.13,0.53,0.28,0.77,0.44c0.55-0.7,0.87-1.53,0.94-2.42H10.06z"></path>
-            <path d="M7.33,5.27v1.4H9.4C9.38,6.06,9.29,5.48,9.13,4.94C8.56,5.13,7.96,5.24,7.33,5.27z"></path>
-            <path d="M7,0C3.14,0,0,3.14,0,7s3.14,7,7,7s7-3.14,7-7S10.86,0,7,0z M10.96,10.25c-0.09,0.11-0.18,0.21-0.28,0.31C9.7,11.57,8.4,12.12,7,12.12s-2.7-0.55-3.68-1.56c-0.1-0.1-0.19-0.2-0.28-0.31C2.29,9.34,1.88,8.18,1.88,7c0-1.18,0.42-2.34,1.17-3.25c0.09-0.11,0.18-0.21,0.28-0.31C4.3,2.43,5.6,1.88,7,1.88s2.7,0.55,3.68,1.56c0.1,0.1,0.19,0.2,0.28,0.31l0,0c0.75,0.91,1.17,2.07,1.17,3.25C12.12,8.18,11.71,9.34,10.96,10.25z"></path>
-        </g>
-    </symbol>
-    <symbol id="icon-socials-link-patreon" viewBox="0 0 14 14">
-        <title>Patreon Icon</title>
-        <path d="M7,0a7,7,0,1,0,7,7A7,7,0,0,0,7,0ZM4.69,10.41H3.44V3.59H4.69Zm5.85-4.25A2.56,2.56,0,1,1,8,3.59a2.56,2.56,0,0,1,2.55,2.57Z"></path>
-    </symbol>
-</svg>
-<div id="pivot-socials-container"></div>
-<script>
-    window.pivotSocials = [
-        {iconName:'facebook', url: "https:\u002F\u002Fwww.facebook.com\u002FGlutenFreeRadioATL"},
-        {iconName:'twitter', url: "https:\u002F\u002Fwww.twitter.com\u002FGlutenRadio"},
-        {iconName:'instagram', url: "https:\u002F\u002Fwww.instagram.com\u002Fglutenfreeradio"},
-        {iconName:'snapchat', url: null},
-        {iconName:'googleplus', url: null},
-        {iconName:'linkedin', url: "https:\u002F\u002Fwww.linkedin.com\u002Fcompany\u002Fgluten-free-radio\u002F"},
-        {iconName:'patreon', url: null},
-        {iconName:'website', url: "http:\u002F\u002Fglutenfreeradio.co"}
-    ].filter(function (s) {
-        return s.url;
-    });
-</script>
-
-
-<script type="text/javascript">
-    var masterObj = {
-        podcast: {"title":"Gluten Free Radio","description":"Birthed in the Metro Atlanta music scene, Gluten Free Radio functions as both an independent artist collective and a source for reviews on current albums.","imageUrl":"http:\u002F\u002Fi1.sndcdn.com\u002Favatars-000314778120-b4j27a-original.jpg","categories":["Music"],"explicit":true,"episodes":[{"title":"001: Bradley Hathaway Interview","description":"On April 26th, 2017, we called up singer\u002Fsongwriter, folk, and spoken word artist Bradley Hathaway to talk about the release of his new album, Flesh Eater, and the course of his life over the past several years.","pubDateMillis":1525368656000,"imageUrl":"http:\u002F\u002Fi1.sndcdn.com\u002Favatars-000314778120-b4j27a-original.jpg","enclosureUrl":"http:\u002F\u002Fwww.podtrac.com\u002Fpts\u002Fredirect.mp3\u002Ffeeds.soundcloud.com\u002Fstream\u002F438889746-glutenfreeradio-001-bradley-hathaway-interview.mp3","durationHms":"00:45:28","id":"tag:soundcloud,2010:tracks\u002F438889746"}],"owner":"Gluten Free Radio"} || {},
-        retailers: [{"retailer":{"id":344,"version":5,"code":"US","name":"Apple Podcasts","internalName":"applepodcasts","verb":"Listen","displayOrder":0,"disabled":false,"scope":"PUB","logos":{"LogoRetina":{"logoType":"LogoRetina","width":300,"height":100,"contentType":"image\u002Fpng"}},"deviceInclusion":"All","countryInclusion":"All","countryCodes":[],"deviceCodes":[]},"destinationUrl":"https:\u002F\u002Fitunes.apple.com\u002Fus\u002Fpodcast\u002Fgluten-free-radio\u002Fid1380324777?mt=2&uo=4&ls=1&at=11lEW&ct=sqdn12","event":"{\"renderId\":\"994702348390096897\",\"smartUrlId\":4211338,\"type\":\"RETAILER_CLICK\",\"timestamp\":0,\"retailerId\":344,\"value\":\"https:\u002F\u002Fitunes.apple.com\u002Fus\u002Fpodcast\u002Fgluten-free-radio\u002Fid1380324777?mt=2&uo=4&ls=1&at=11lEW&ct=sqdn12\"}","internalName":"applepodcasts","noScriptDestinationUrl":"\u002F_action\u002Fapplepodcasts?body=%7B%22renderId%22%3A%22994702348390096897%22%2C%22smartUrlId%22%3A4211338%2C%22type%22%3A%22RETAILER_CLICK%22%2C%22timestamp%22%3A0%2C%22retailerId%22%3A344%2C%22value%22%3A%22https%3A%2F%2Fitunes.apple.com%2Fus%2Fpodcast%2Fgluten-free-radio%2Fid1380324777%3Fmt%3D2%26uo%3D4%26ls%3D1%26at%3D11lEW%26ct%3Dsqdn12%22%7D","retinaLogo":{"logoType":"LogoRetina","width":300,"height":100,"contentType":"image\u002Fpng"},"callToAction":"Listen","retinaLogoUrl":"\u002F_retailerLogo\u002F344_5_LogoRetina","name":"Apple Podcasts","id":344},{"retailer":{"id":50,"version":2,"code":"GS","name":"Google Play Streaming","internalName":"googleplaystreaming","verb":"Listen","displayOrder":0,"disabled":false,"scope":"PUB","logos":{"LogoRetina":{"logoType":"LogoRetina","width":276,"height":54,"contentType":"image\u002Fpng;charset=UTF-8"},"LG":{"logoType":"LG","width":138,"height":27,"contentType":"image\u002Fpng;charset=UTF-8"}},"deviceInclusion":"All","countryInclusion":"All","countryCodes":[],"deviceCodes":[]},"destinationUrl":"https:\u002F\u002Fplay.google.com\u002Fmusic\u002Fm\u002FIzfkgvzso7tufzwfwki7ufznt3m?t=Gluten_Free_Radio","event":"{\"renderId\":\"994702348390096897\",\"smartUrlId\":4211338,\"type\":\"RETAILER_CLICK\",\"timestamp\":0,\"retailerId\":50,\"value\":\"https:\u002F\u002Fplay.google.com\u002Fmusic\u002Fm\u002FIzfkgvzso7tufzwfwki7ufznt3m?t=Gluten_Free_Radio\"}","internalName":"googleplaystreaming","noScriptDestinationUrl":"\u002F_action\u002Fgoogleplaystreaming?body=%7B%22renderId%22%3A%22994702348390096897%22%2C%22smartUrlId%22%3A4211338%2C%22type%22%3A%22RETAILER_CLICK%22%2C%22timestamp%22%3A0%2C%22retailerId%22%3A50%2C%22value%22%3A%22https%3A%2F%2Fplay.google.com%2Fmusic%2Fm%2FIzfkgvzso7tufzwfwki7ufznt3m%3Ft%3DGluten_Free_Radio%22%7D","logo":{"logoType":"LG","width":138,"height":27,"contentType":"image\u002Fpng;charset=UTF-8"},"retinaLogo":{"logoType":"LogoRetina","width":276,"height":54,"contentType":"image\u002Fpng;charset=UTF-8"},"callToAction":"Listen","logoUrl":"\u002F_retailerLogo\u002F50_2_LG","retinaLogoUrl":"\u002F_retailerLogo\u002F50_2_LogoRetina","name":"Google Play Streaming","id":50},{"retailer":{"id":342,"version":1,"code":"I9","name":"TuneIn","internalName":"tunein","verb":"Listen","displayOrder":0,"disabled":false,"scope":"PUB","logos":{"LogoRetina":{"logoType":"LogoRetina","width":300,"height":100,"contentType":"image\u002Fpng"}},"deviceInclusion":"All","countryInclusion":"All","countryCodes":[],"deviceCodes":[]},"destinationUrl":"https:\u002F\u002Ftunein.com\u002Fpodcasts\u002FMusic-News\u002FGluten-Free-Radio-p1124082\u002F","event":"{\"renderId\":\"994702348390096897\",\"smartUrlId\":4211338,\"type\":\"RETAILER_CLICK\",\"timestamp\":0,\"retailerId\":342,\"value\":\"https:\u002F\u002Ftunein.com\u002Fpodcasts\u002FMusic-News\u002FGluten-Free-Radio-p1124082\u002F\"}","internalName":"tunein","noScriptDestinationUrl":"\u002F_action\u002Ftunein?body=%7B%22renderId%22%3A%22994702348390096897%22%2C%22smartUrlId%22%3A4211338%2C%22type%22%3A%22RETAILER_CLICK%22%2C%22timestamp%22%3A0%2C%22retailerId%22%3A342%2C%22value%22%3A%22https%3A%2F%2Ftunein.com%2Fpodcasts%2FMusic-News%2FGluten-Free-Radio-p1124082%2F%22%7D","retinaLogo":{"logoType":"LogoRetina","width":300,"height":100,"contentType":"image\u002Fpng"},"callToAction":"Listen","retinaLogoUrl":"\u002F_retailerLogo\u002F342_1_LogoRetina","name":"TuneIn","id":342},{"retailer":{"id":279,"version":0,"code":"SZ","name":"Stitcher","internalName":"stitcher","verb":"Listen","displayOrder":0,"disabled":false,"scope":"PUB","logos":{"LogoRetina":{"logoType":"LogoRetina","width":290,"height":28,"contentType":"image\u002Fpng"},"LG":{"logoType":"LG","width":145,"height":14,"contentType":"image\u002Fpng"}},"deviceInclusion":"All","countryInclusion":"All","countryCodes":[],"deviceCodes":[]},"destinationUrl":"https:\u002F\u002Fwww.stitcher.com\u002Fpodcast\u002Fgluten-free-radio","event":"{\"renderId\":\"994702348390096897\",\"smartUrlId\":4211338,\"type\":\"RETAILER_CLICK\",\"timestamp\":0,\"retailerId\":279,\"value\":\"https:\u002F\u002Fwww.stitcher.com\u002Fpodcast\u002Fgluten-free-radio\"}","internalName":"stitcher","noScriptDestinationUrl":"\u002F_action\u002Fstitcher?body=%7B%22renderId%22%3A%22994702348390096897%22%2C%22smartUrlId%22%3A4211338%2C%22type%22%3A%22RETAILER_CLICK%22%2C%22timestamp%22%3A0%2C%22retailerId%22%3A279%2C%22value%22%3A%22https%3A%2F%2Fwww.stitcher.com%2Fpodcast%2Fgluten-free-radio%22%7D","logo":{"logoType":"LG","width":145,"height":14,"contentType":"image\u002Fpng"},"retinaLogo":{"logoType":"LogoRetina","width":290,"height":28,"contentType":"image\u002Fpng"},"callToAction":"Listen","logoUrl":"\u002F_retailerLogo\u002F279_0_LG","retinaLogoUrl":"\u002F_retailerLogo\u002F279_0_LogoRetina","name":"Stitcher","id":279},{"retailer":{"id":9,"version":5,"code":"SC","name":"SoundCloud","internalName":"soundcloud","verb":"Listen","displayOrder":0,"disabled":false,"scope":"PUB","logos":{"LG":{"logoType":"LG","width":89,"height":51,"contentType":"image\u002Fpng"},"LogoRetina":{"logoType":"LogoRetina","width":178,"height":102,"contentType":"image\u002Fpng"}},"deviceInclusion":"All","countryInclusion":"All","countryCodes":[],"deviceCodes":[]},"destinationUrl":"https:\u002F\u002Fsoundcloud.com\u002Fglutenfreeradio","event":"{\"renderId\":\"994702348390096897\",\"smartUrlId\":4211338,\"type\":\"RETAILER_CLICK\",\"timestamp\":0,\"retailerId\":9,\"value\":\"https:\u002F\u002Fsoundcloud.com\u002Fglutenfreeradio\"}","internalName":"soundcloud","noScriptDestinationUrl":"\u002F_action\u002Fsoundcloud?body=%7B%22renderId%22%3A%22994702348390096897%22%2C%22smartUrlId%22%3A4211338%2C%22type%22%3A%22RETAILER_CLICK%22%2C%22timestamp%22%3A0%2C%22retailerId%22%3A9%2C%22value%22%3A%22https%3A%2F%2Fsoundcloud.com%2Fglutenfreeradio%22%7D","logo":{"logoType":"LG","width":89,"height":51,"contentType":"image\u002Fpng"},"retinaLogo":{"logoType":"LogoRetina","width":178,"height":102,"contentType":"image\u002Fpng"},"callToAction":"Listen","logoUrl":"\u002F_retailerLogo\u002F9_5_LG","retinaLogoUrl":"\u002F_retailerLogo\u002F9_5_LogoRetina","name":"SoundCloud","id":9}]
-    };
-
-    masterObj.podcast.airtime = "";
-    masterObj.podcast.call_to_action_text = "";
-    masterObj.podcast.call_to_action_url = "";
-    masterObj.podcast.custom_logo = null;
-    masterObj.podcast.description = "Birthed in the Metro Atlanta music scene, Gluten Free Radio functions as both an independent artist collective and a source for reviews on current albums.";
-    masterObj.podcast.featured_episode = "";
-    masterObj.podcast.host = "";
-    masterObj.podcast.owner = "Gluten Free Radio";
-    masterObj.podcast.overlayBG = null;
-    masterObj.podcast.title = "Gluten Free Radio";
-    masterObj.podcast.headerBG = null;
-    masterObj.podcast.categoriesVisible = "0";
-    masterObj.podcast.highlightFeaturedEp = null;
-
-    masterObj.episode_order = null;
-
+<!doctype html>
+
+<html xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:website="http://ogp.me/ns/website" lang="en-US" itemscope itemtype="http://schema.org/WebPage" >
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+
+<base href="">
+<meta charset="utf-8" />
+<title>Gluten Free Radio</title>
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/assets/img/icons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/assets/img/icons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/assets/img/icons/manifest.json">
+<link rel="mask-icon" href="/assets/img/icons/safari-pinned-tab.svg" color="#5e5e5e">
+<link rel="shortcut icon" href="/assets/img/icons/favicon.ico">
+<meta name="msapplication-config" content="/assets/img/icons/browserconfig.xml">
+<meta name="theme-color" content="#ededed">
+<link rel="canonical" href="http://glutenfreeradio.co/"/>
+<meta property="og:image:url" content="http://glutenfreeradio.co/assets/img/og-image.jpg" />
+<meta property="og:image:width" content="1219" />
+<meta property="og:image:height" content="638" />
+<meta property="og:description" content="Birthed in the Metro Atlanta music scene, Gluten Free Radio functions as both an independent artist collective and a source for reviews on current albums.">
+<meta property="og:title" content="Gluten Free Radio" />
+<meta property="og:url" content="http://glutenfreeradio.co" />
+<meta property="og:type" content="website"/>
+<meta name="twitter:title" content="Gluten Free Radio"/>
+<meta name="twitter:url" content="http://glutenfreeradio.co/"/>
+<meta name="twitter:card" content="Birthed in the Metro Atlanta music scene, Gluten Free Radio functions as both an independent artist collective and a source for reviews on current albums."/>
+<meta name="description" content="Birthed in the Metro Atlanta music scene, Gluten Free Radio functions as both an independent artist collective and a source for reviews on current albums." />
+<meta name="keywords" content="music, artist collective, record label, music industry, local music, local bands, local artists, Atlanta, Atlanta music, independent" />
+<script type="text/javascript" src="http://use.typekit.net/ik/CR2qBxxI7eNaIeosxoZZP8bnkOpBZOf0DvwvI2vV2EJfezMffFHN4UJLFRbh52jhWD9tZ2w3Z2JhwQiKZcZRZQShFRMUjAIXwU7gMPG0Sas8Sey8dKuD-YmXiemkSkuRi2i0O1FUiABkZWF3jAF8OcFzdPUCdhFydeyzSabCSas8Sey8dKuD-YmXiemkSkuRi2i0O1FUiABkZWF3jAF8OcFzdPUaiaS0Sas8Sey8dKuD-YmXiemkSkuRi2i0O1FUiABkZWF3jAF8OcFzdPJwSY4zpe8ljPu0daZyH6qJ73IbMg6gJMJ7fbKCMsMMeMC6MKG4f5J7IMMjMkMfH6qJtkGbMg6FJMJ7fbKzMsMMeMb6MKG4fOMgIMMj2KMfH6GJCwbgIMMjgPMfH6GJCSbgIMMj2kMfH6qJnbIbMg6eJMJ7fbK0MsMMegM6MKG4fJCgIMMjgkMfH6qJRMIbMg6sJMJ7fbKTMsMMeM66MKG4fHGgIMMjIKMfH6qJKbIbMg64JMJ7fbKHMsMMegw6MTMgtH2wU69.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+<script type="text/javascript">SQUARESPACE_ROLLUPS = {};</script>
+<script>(function(rollups, name) { if (!rollups[name]) { rollups[name] = {}; } rollups[name].js = ["http://static.squarespace.com/universal/scripts-compressed/common-aa686604e71935fbdd98-min.js"]; })(SQUARESPACE_ROLLUPS, 'squarespace-common');</script>
+<script crossorigin="anonymous" src="http://static.squarespace.com/universal/scripts-compressed/common-aa686604e71935fbdd98-min.js"></script><script type="text/javascript" data-sqs-type="imageloader">(function() {var EXCLUDED_SIZES=function(){var a=window.location.search,b=a.indexOf("exclude_imageloader_sizes=");return-1<b&&(a=a.substr(b+26).split("&")[0])?a.split(",").map(function(a){return parseInt(a,10)}):[]}(),SQUARESPACE_SIZES=[2500,1500,1E3,750,500,300,100].filter(function(a){return-1===EXCLUDED_SIZES.indexOf(a)}),IMAGE_LOADING_CLASS="loading",ImageLoader=new function(){this.load=function(a,b){function d(a,b,c){var d=new Image;d.onload=b;d.onerror=c;d.src=a}a.getDOMNode&&(a=a.getDOMNode());var c=this._getDataFromNode(a,
+b),e=!(!c.dimensions||!c.dimensions.width||!c.dimensions.height),g=c.load+"";if("false"===g)return!1;var h=c.mode;if(e&&("fit"===h||"fill"===h)){h=a.parentNode;if(!h)return console.error("Not doing anything, parentNode not found."),!1;if(!this.refresh(a,b,h))return!1}var n=this._intendToLoad(a,c);if("string"===typeof n&&"viewport"!==g){var m=this.getUrl(n,c),g=a.getAttribute("data-image-resolution");a.getAttribute("src")!==m&&this.isValidResolution(n,g)&&(a.onload=function(){a.className=a.className.replace(IMAGE_LOADING_CLASS,
+" ").trim();a.setAttribute("data-image-resolution",n)},!a.getAttribute("src")&&-1===a.className.indexOf(IMAGE_LOADING_CLASS)&&(a.className+=(a.className?" ":"")+IMAGE_LOADING_CLASS),!a.getAttribute("src")&&e?(a.setAttribute("src",m),c.useBgImage&&(a.parentNode.style.backgroundImage="url("+m+")")):d(m,function(){e?a.setAttribute("src",m):(a.setAttribute("data-image-dimensions",this.width+"x"+this.height),ImageLoader.load(a,b))},function(){a.className=a.className.replace(IMAGE_LOADING_CLASS," ").trim();
+a.setAttribute("src",m)}));return!0}return n};this.refresh=function(a,b,d){a.getDOMNode&&(a=a.getDOMNode());d&&d.getDOMNode&&(d=d.getDOMNode());d=d||a.parentNode;if(!d)return console.error("Not doing anything, parentNode not found."),!1;var c=this._getDataFromNode(a,b),e=d.offsetWidth,g=d.offsetHeight;b=c.mode;if("none"!==b){var h=c.dimensions.width,n=c.dimensions.height,m=h/n,q=e/g;if(c.useBgImage&&"fill"===b&&"backgroundSize"in document.documentElement.style)return a.style.display="none",d.style.backgroundSize=
+"cover",d.style.backgroundPosition=100*c.focalPoint.x+"% "+100*c.focalPoint.y+"%",!0;if(c.fixedRatio)"fill"==b&&q>m||"fit"==b&&q<m?(k=100,l=100*(q/m),r=(100-l)*c.focalPoint.y,p=0):(k=100*(m/q),l=100,r=0,p=(100-k)*c.focalPoint.x),a.style.top=r+"%",a.style.left=p+"%",a.style.width=k+"%",a.style.height=l+"%";else{var f;"fill"===b?f=m>q?g/n:e/h:"fit"===b&&(f=m<q?g/n:e/h);!c.stretch&&"fit"==b&&1<f&&(f=1);var k=Math.ceil(h*f),l=Math.ceil(n*f);if(0===k||0===l)return!1;var p,r;"fill"===b?(p=Math.min(Math.max(e/
+2-k*c.focalPoint.x,e-k),0),r=Math.min(Math.max(g/2-l*c.focalPoint.y,g-l),0)):"fit"===b&&(f=c.fitAlignment,p=f.left?0:f.right?e-k:k<e?(e-k)/2:0,r=f.top?0:f.bottom?g-l:l<g?(g-l)/2:0,"inline"==this._getStyle(a,"display")&&(a.style.fontSize="0px"),this._resetAlt(a,function(){k-=a.offsetHeight-a.clientHeight;l-=a.offsetWidth-a.clientWidth}));a.style.top=Math.ceil(r)+"px";a.style.left=Math.ceil(p)+"px";a.style.width=Math.ceil(k)+"px";a.style.height=Math.ceil(l)+"px"}p=this._getStyle(d,"position");a.style.position=
+"relative"==p?"absolute":"relative";if("fill"==b&&(b=this._getStyle(d,"overflow"),!b||"hidden"!=b))d.style.overflow="hidden";return!0}};this._intendToLoad=function(a,b){function d(c,d){"none"===b.mode&&(a.style.width=null,a.style.height=null);var e=parseFloat(a.getAttribute(c)),f=parseFloat(e);if(!f||isNaN(f))e=h._getStyle(a,c),f=parseFloat(e);if(!f||isNaN(f))e=h._getStyle(a,"max-"+c,"max"+(c.substr(0,1).toUpperCase()+c.substr(1))),f=parseFloat(e);if(0===d||e)switch(h._stringType(e)){case "percentage":d=
+parseInt(e,10)/100*g["offset"+c.substr(0,1).toUpperCase()+c.substr(1)];break;case "number":d=parseInt(e,10)}!f&&0!==d&&!a.getAttribute("src")&&(d=0);return d}b=b||this._getDataFromNode(a);if(!b.source)return!1;var c=a.offsetWidth,e=a.offsetHeight,g=a.parentNode,h=this;this._resetAlt(a,function(){c=d("width",c);e=d("height",e)});0===c&&0===e?(c=b.dimensions.width,e=b.dimensions.height):0===c?c=this.getDimensionForValue("width",e,b):0===e&&(e=this.getDimensionForValue("height",c,b));"viewport"===b.load&&
+(a.style.width=Math.floor(c)+"px",a.style.height=Math.floor(e)+"px");return this.getSquarespaceSize(c,e,b)};this._getDataFromNode=function(a,b){b=b||{};var d={focalPoint:{x:0.5,y:0.5},dimensions:{width:null,height:null},mode:"none",fitAlignment:{center:!0},load:"true",stretch:!0,fixedRatio:!1};if(b.focalPoint)d.focalPoint=b.focalPoint;else{var c=a.getAttribute("data-image-focal-point");if(c&&(c=c.split(","))&&2==c.length)d.focalPoint={x:parseFloat(c[0]),y:parseFloat(c[1])}}if(b.dimensions)d.dimensions=
+b.dimensions;else if((c=a.getAttribute("data-image-dimensions"))&&(c=c.split("x"))&&2==c.length)d.dimensions={width:parseInt(c[0],10),height:parseInt(c[1],10)};b.mode?d.mode=b.mode:a.parentNode&&(c=a.parentNode.className,-1!==c.indexOf("content-fill")?d.mode="fill":-1!==c.indexOf("content-fit")&&(d.mode="fit"));if("fit"===d.mode&&a.parentNode&&(c=b.fitAlignment||a.getAttribute("data-alignment")||a.parentNode.getAttribute("data-alignment")))d.fitAlignment={top:-1!==c.indexOf("top"),left:-1!==c.indexOf("left"),
+center:-1!==c.indexOf("center"),right:-1!==c.indexOf("right"),bottom:-1!==c.indexOf("bottom")};b.load?d.load=b.load:(c=a.getAttribute("data-load"))&&(d.load=c);if("undefined"!==typeof b.stretch)d.stretch=b.stretch;else if(c=a.getAttribute("data-image-stretch"))d.stretch="true"===c?!0:!1;d.source=b.source?b.source:a.getAttribute("data-src");d.source&&this.isSquarespaceUrl(d.source)&&("http:"===d.source.substr(0,5)&&"https"===window.location.protocol.substr(0,5))&&(d.source=d.source.replace("http://",
+"https://"));if(b.fixedRatio)d.fixedRatio=b.fixedRatio;else if(c=a.getAttribute("data-fixed-ratio"))d.fixedRatio="true"==c;b.useBgImage?d.useBgImage=b.useBgImage:(c=a.getAttribute("data-use-bg-image"),d.useBgImage="true"===c||!0===c?!0:!1);return d};this._stringType=function(a){return"string"===typeof a&&-1!==a.indexOf("%")?"percentage":isNaN(parseInt(a,10))?NaN:"number"};this._getStyle=function(a,b,d){var c;a.currentStyle?c=a.currentStyle[d||b]:window.getComputedStyle&&(c=document.defaultView.getComputedStyle(a,
+null).getPropertyValue(b));return c};this._isVisible=function(a){a=a.getBoundingClientRect();return 0<=a.left&&0<=a.top||0<=a.bottom&&0<=a.right||0<=a.left&&0<=a.bottom||0<=a.right&&0<=a.top};this.getSquarespaceSize=function(a,b,d){a=Math.max(b/(d.dimensions.height/d.dimensions.width),a);"undefined"===typeof app&&"number"===typeof window.devicePixelRatio&&(a*=window.devicePixelRatio);for(b=1;b<SQUARESPACE_SIZES.length&&!(a>SQUARESPACE_SIZES[b]);b++);return SQUARESPACE_SIZES[b-1]+"w"};this.getDimensionForValue=
+function(a,b,d){var c=d.dimensions.width;d=d.dimensions.height;return"width"==a?c/d*b:"height"==a?d/c*b:NaN};this.getUrl=function(a,b){var d=b.source;return a&&("/"==d[0]||this.isSquarespaceUrl(d))?(-1===d.indexOf("format="+a)&&(d=d+(-1!==d.indexOf("?")?"&":"?")+"format="+a),d):b.source};this.isSquarespaceUrl=function(a){return-1!==a.indexOf("squarespace.com")||-1!==a.indexOf("squarespace.net")||-1!==a.indexOf("sqsp.net")};this.isValidResolution=function(a,b){a=parseInt(a,10);b=parseInt(b,10);return isNaN(a)||
+isNaN(b)?!0:a>b};this._resetAlt=function(a,b){var d=a.getAttribute("alt"),c=d&&0<d.length&&!a.getAttribute("src");if(c){var e=a.style.display;a.removeAttribute("alt");a.style.display="none";a.offsetHeight+0;a.style.display=e}b.call(this);c&&a.setAttribute("alt",d)};this.bootstrap=function(){var a=document.images;if(0<a.length)for(var b=0,d=a.length;b<d;b++)((a[b].hasAttribute?a[b].hasAttribute("data-image"):a[b].attributes["data-image"])||(a[b].hasAttribute?a[b].hasAttribute("data-src"):a[b].attributes["data-src"]))&&
+"false"!==(a[b].getAttribute?a[b].getAttribute("data-load"):a[b].attributes["data-load"])+""&&ImageLoader.load(a[b])}};window.ImageLoader=ImageLoader;window.YUI&&YUI.add("squarespace-imageloader",function(a){},"1.0",{requires:[]});
+})();</script>
+<script>Static.SQUARESPACE_CONTEXT = {"facebookAppId":"314192535267336","rollups":{"squarespace-announcement-bar":{"css":"http://static.squarespace.com/universal/styles-compressed/announcement-bar-d41d8cd98f00b204e9800998ecf8427e-min.css","js":"http://static.squarespace.com/universal/scripts-compressed/announcement-bar-56de8263998ae07adc5f-min.js"},"squarespace-audio-player":{"css":"http://static.squarespace.com/universal/styles-compressed/audio-player-76e4bfcc3f9830beb388bae2002fbe6c-min.css","js":"http://static.squarespace.com/universal/scripts-compressed/audio-player-86ba61da474ee0bdece6-min.js"},"squarespace-blog-collection-list":{"css":"http://static.squarespace.com/universal/styles-compressed/blog-collection-list-d41d8cd98f00b204e9800998ecf8427e-min.css","js":"http://static.squarespace.com/universal/scripts-compressed/blog-collection-list-c24652108969c01c124f-min.js"},"squarespace-calendar-block-renderer":{"css":"http://static.squarespace.com/universal/styles-compressed/calendar-block-renderer-032634519fa160b1d2da6986dce0cdae-min.css","js":"http://static.squarespace.com/universal/scripts-compressed/calendar-block-renderer-a0013dfa64db1eff3ff3-min.js"},"squarespace-chartjs-helpers":{"css":"http://static.squarespace.com/universal/styles-compressed/chartjs-helpers-9935a41d63cf08ca108505d288c1712e-min.css","js":"http://static.squarespace.com/universal/scripts-compressed/chartjs-helpers-b69956c9c85eef641d5b-min.js"},"squarespace-comments":{"css":"http://static.squarespace.com/universal/styles-compressed/comments-6bcdae5e947685b8d76595f935802428-min.css","js":"http://static.squarespace.com/universal/scripts-compressed/comments-076c6419751587a808c4-min.js"},"squarespace-dialog":{"css":"http://static.squarespace.com/universal/styles-compressed/dialog-41403d1f0d87846c1b05baa36a8d7c38-min.css","js":"http://static.squarespace.com/universal/scripts-compressed/dialog-f46309b678163b74e560-min.js"},"squarespace-events-collection":{"css":"http://static.squarespace.com/universal/styles-compressed/events-collection-032634519fa160b1d2da6986dce0cdae-min.css","js":"http://static.squarespace.com/universal/scripts-compressed/events-collection-3b95c080e6558e21cffd-min.js"},"squarespace-form-rendering-utils":{"js":"http://static.squarespace.com/universal/scripts-compressed/form-rendering-utils-568cfaf2ab90740b98a8-min.js"},"squarespace-gallery-collection-list":{"css":"http://static.squarespace.com/universal/styles-compressed/gallery-collection-list-d41d8cd98f00b204e9800998ecf8427e-min.css","js":"http://static.squarespace.com/universal/scripts-compressed/gallery-collection-list-a2640ce85ba56b180c46-min.js"},"squarespace-image-zoom":{"css":"http://static.squarespace.com/universal/styles-compressed/image-zoom-ae974921915aeccaff8ad60c60e19c31-min.css","js":"http://static.squarespace.com/universal/scripts-compressed/image-zoom-a2a73bc2a00ad9f2f6b0-min.js"},"squarespace-pinterest":{"css":"http://static.squarespace.com/universal/styles-compressed/pinterest-d41d8cd98f00b204e9800998ecf8427e-min.css","js":"http://static.squarespace.com/universal/scripts-compressed/pinterest-36a7991d0e61ebdcf2cd-min.js"},"squarespace-product-quick-view":{"css":"http://static.squarespace.com/universal/styles-compressed/product-quick-view-08b8bc28a0ebc23133be39788d922dfe-min.css","js":"http://static.squarespace.com/universal/scripts-compressed/product-quick-view-f78a64b412f014720b36-min.js"},"squarespace-products-collection-item-v2":{"css":"http://static.squarespace.com/universal/styles-compressed/products-collection-item-v2-ae974921915aeccaff8ad60c60e19c31-min.css","js":"http://static.squarespace.com/universal/scripts-compressed/products-collection-item-v2-ef25fe50ff2bb9698e36-min.js"},"squarespace-products-collection-list-v2":{"css":"http://static.squarespace.com/universal/styles-compressed/products-collection-list-v2-ae974921915aeccaff8ad60c60e19c31-min.css","js":"http://static.squarespace.com/universal/scripts-compressed/products-collection-list-v2-6b4c07fccf2abb9b1294-min.js"},"squarespace-search-page":{"css":"http://static.squarespace.com/universal/styles-compressed/search-page-031b3c854435303b74a36777a3d07449-min.css","js":"http://static.squarespace.com/universal/scripts-compressed/search-page-51abb3e301212d494f52-min.js"},"squarespace-search-preview":{"js":"http://static.squarespace.com/universal/scripts-compressed/search-preview-97e7b55ce4ad8711671a-min.js"},"squarespace-share-buttons":{"js":"http://static.squarespace.com/universal/scripts-compressed/share-buttons-20cbe93645c3a6c82e23-min.js"},"squarespace-simple-liking":{"css":"http://static.squarespace.com/universal/styles-compressed/simple-liking-09fa291ec2800c97714f0d157fd0a6ca-min.css","js":"http://static.squarespace.com/universal/scripts-compressed/simple-liking-8b658da918391add6b2e-min.js"},"squarespace-social-buttons":{"css":"http://static.squarespace.com/universal/styles-compressed/social-buttons-7a696232d1cd101fd62b5f174f9ae6ff-min.css","js":"http://static.squarespace.com/universal/scripts-compressed/social-buttons-0ee525485cd359c0eb19-min.js"},"squarespace-tourdates":{"css":"http://static.squarespace.com/universal/styles-compressed/tourdates-d41d8cd98f00b204e9800998ecf8427e-min.css","js":"http://static.squarespace.com/universal/scripts-compressed/tourdates-811cd5ed20b833e31985-min.js"},"squarespace-website-overlays-manager":{"css":"http://static.squarespace.com/universal/styles-compressed/website-overlays-manager-69fb1d67ad8207d62a52d4507e58ba0d-min.css","js":"http://static.squarespace.com/universal/scripts-compressed/website-overlays-manager-8451ca2983682d86f251-min.js"}},"pageType":1,"website":{"id":"58d30d2617bffce76601aa43","identifier":"stephen-shutters-ct7n","websiteType":1,"contentModifiedOn":1490233015456,"cloneable":false,"siteStatus":{},"language":"en-US","timeZone":"America/New_York","machineTimeZoneOffset":-14400000,"timeZoneOffset":-14400000,"timeZoneAbbr":"EDT","siteTitle":"Gluten Free Radio","siteDescription":"","shareButtonOptions":{"2":true,"4":true,"5":true,"8":true,"1":true,"6":true,"7":true,"3":true},"authenticUrl":"http://glutenfreeradio.co","internalUrl":"http://glutenfreeradio.co","baseUrl":"http://glutenfreeradio.co","sslSetting":3,"typekitId":"","statsMigrated":false,"imageMetadataProcessingEnabled":false,"screenshotId":"bbaa6f6a"},"websiteSettings":{"id":"58d30d2617bffce76601aa46","websiteId":"58d30d2617bffce76601aa43","subjects":[],"country":"US","state":"GA","simpleLikingEnabled":true,"mobileInfoBarSettings":{"isContactEmailEnabled":false,"isContactPhoneNumberEnabled":false,"isLocationEnabled":false,"isBusinessHoursEnabled":false},"commentLikesAllowed":true,"commentAnonAllowed":true,"commentThreaded":true,"commentApprovalRequired":false,"commentAvatarsOn":true,"commentSortType":2,"commentFlagThreshold":0,"commentFlagsAllowed":true,"commentEnableByDefault":true,"commentDisableAfterDaysDefault":0,"disqusShortname":"","commentsEnabled":false,"storeSettings":{"returnPolicy":null,"termsOfService":null,"privacyPolicy":null,"paymentSettings":{},"expressCheckout":false,"useLightCart":false,"showNoteField":false,"shippingCountryDefaultValue":"US","billToShippingDefaultValue":false,"showShippingPhoneNumber":true,"isShippingPhoneRequired":false,"showBillingPhoneNumber":true,"isBillingPhoneRequired":false,"currenciesSupported":["CHF","HKD","MXN","EUR","DKK","USD","CAD","MYR","NOK","THB","AUD","SGD","ILS","PLN","GBP","CZK","SEK","NZD","PHP","RUB"],"defaultCurrency":"USD","selectedCurrency":"USD","measurementStandard":1,"showCustomCheckoutForm":false,"enableMailingListOptInByDefault":false,"sameAsRetailLocation":false,"isLive":false},"useEscapeKeyToLogin":true,"ssBadgeType":1,"ssBadgePosition":4,"ssBadgeVisibility":1,"ssBadgeDevices":1,"pinterestOverlayOptions":{"mode":"disabled"},"ampEnabled":false},"cookieSettings":{"isRestrictiveCookiePolicyEnabled":false},"websiteCloneable":false,"collection":{"title":"Home","id":"58d30dfb579fb3d80d0f5bba","fullUrl":"/","type":7},"subscribed":false,"appDomain":"squarespace.com","templateTweakable":true,"tweakJSON":{"aspect-ratio":"Auto","bg-image":"{background-image:url(\"http://glutenfreeradio.co/assets/img/background.jpg\");background-position:center center;background-size:cover;background-attachment:fixed;background-repeat:no-repeat}","gallery-arrow-style":"No Background","gallery-aspect-ratio":"3:2 Standard","gallery-auto-crop":"true","gallery-autoplay":"false","gallery-design":"Slideshow","gallery-info-overlay":"Show on Hover","gallery-loop":"false","gallery-navigation":"Bullets","gallery-show-arrows":"true","gallery-transitions":"Fade","galleryArrowBackground":"rgba(34,34,34,1)","galleryArrowColor":"rgba(255,255,255,1)","galleryAutoplaySpeed":"3","galleryCircleColor":"rgba(255,255,255,1)","galleryInfoBackground":"rgba(0, 0, 0, .7)","galleryThumbnailSize":"100px","gridSize":"350px","gridSpacing":"20px","product-gallery-auto-crop":"true","product-image-auto-crop":"true"},"templateId":"507c1fdf84ae362b5e7be44e","pageFeatures":[1,2,4],"impersonatedSession":false,"demoCollections":[{"collectionId":"53ff42d5e4b0260e999ebb7e","deleted":true},{"collectionId":"53fdfdc7e4b0946dd693653e","deleted":true},{"collectionId":"53fca4b5e4b051654a7fec17","deleted":true},{"collectionId":"5433f9b1e4b08c1f73be0ffd","deleted":false},{"collectionId":"53fe44ede4b0b801964d334f","deleted":true},{"collectionId":"53fe4580e4b0c94d6db88c1c","deleted":true},{"collectionId":"540646d5e4b04db10d20aea7","deleted":true}],"isFacebookTab":false,"tzData":{"zones":[[-300,"US","E%sT",null]],"rules":{"US":[[1967,2006,null,"Oct","lastSun","2:00","0","S"],[1987,2006,null,"Apr","Sun>=1","2:00","1:00","D"],[2007,"max",null,"Mar","Sun>=8","2:00","1:00","D"],[2007,"max",null,"Nov","Sun>=1","2:00","0","S"]]}}};</script><script type="text/javascript"> SquarespaceFonts.loadViaContext(); Squarespace.load(window);</script><script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"http://glutenfreeradio.co","name":"Gluten Free Radio","description":""}</script><!--[if gte IE 9]> <link rel="stylesheet" type="text/css" href="/assets/css/site.css?&filterFeatures=false&part=1"/><link rel="stylesheet" type="text/css" href="/assets/css/site.css?&filterFeatures=false&part=2"/><link rel="stylesheet" type="text/css" href="/assets/css/site.css?&filterFeatures=false&part=3"/><link rel="stylesheet" type="text/css" href="/assets/css/site.css?&filterFeatures=false&part=4"/><![endif]-->
+<!--[if lt IE 9]><link rel="stylesheet" type="text/css" href="/assets/css/site.css?&filterFeatures=false&noMedia=true&part=1"/><link rel="stylesheet" type="text/css" href="/assets/css/site.css?&filterFeatures=false&noMedia=true&part=2"/><link rel="stylesheet" type="text/css" href="/assets/css/site.css?&filterFeatures=false&noMedia=true&part=3"/><link rel="stylesheet" type="text/css" href="/assets/css/site.css?&filterFeatures=false&noMedia=true&part=4"/><![endif]-->
+<!--[if !IE]> --><link rel="stylesheet" type="text/css" href="/assets/css/site.css?&filterFeatures=false"/><!-- <![endif]-->
+<!-- End of Squarespace Headers -->
+
+    <script type="text/javascript" src="https://static1.squarespace.com/static/ta/507c1fdb84ae362b5e7be351/2122/scripts/combo/?site.js"></script>
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-96472859-1', 'auto');
+  ga('send', 'pageview');
 
 </script>
-<script type="text/javascript">
-    (function () {
-        if (!window.isPreview && window.Retargeting) {
-            Retargeting.trackEvent('PageView', null, []);
-        }
-    }());
-</script>
-<script type="text/javascript" src="/_static/scripts/compiled/smarturl-podcast.js"></script>
-</body>
+  </head>
+
+  <body>
+    <iframe src="http://smarturl.it/glutenfreeradiopod"></iframe>
+
+  </body>
+
 </html>
