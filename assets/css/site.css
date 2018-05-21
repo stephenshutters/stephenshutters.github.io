@@ -11638,7 +11638,7 @@ body:not(.tweak-product-quick-view-lightbox-show-close-button) .sqs-product-quic
     text-transform:uppercase
 }
 .bg-image{
-    background-image:url("http://glutenfreeradio.co/assets/img/background.jpg");
+    background-image:url("https://glutenfreeradio.co/assets/img/background.jpg");
     background-position:top left;
     background-size:cover;
     background-attachment:fixed;
@@ -11787,7 +11787,7 @@ body:not(.tweak-product-quick-view-lightbox-show-close-button) .sqs-product-quic
     line-height:1.6em
 }
 .page-bg-image{
-    background-image:url("http://glutenfreeradio.co/assets/img/background.jpg");
+    background-image:url("https://glutenfreeradio.co/assets/img/background.jpg");
     background-position:top left;
     background-size:cover;
     background-attachment:fixed;
@@ -12491,9 +12491,9 @@ body{
     background-color:#000
 }
 #outerWrapper{
-    background-image:url("http://glutenfreeradio.co/assets/img/background.jpg");
+    background-image:url("https://glutenfreeradio.co/assets/img/background.jpg");
     background-position:top left;
-    background-image:url("http://glutenfreeradio.co/assets/img/background.jpg");
+    background-image:url("https://glutenfreeradio.co/assets/img/background.jpg");
     background-position:center center;
     background-size:cover;
     background-attachment:fixed;
@@ -12505,9 +12505,9 @@ body{
     z-index:1
 }
 .collection-type-template-page #outerWrapper{
-    background-image:url("http://glutenfreeradio.co/assets/img/background.jpg");
+    background-image:url("https://glutenfreeradio.co/assets/img/background.jpg");
     background-position:top left;
-    background-image:url("http://glutenfreeradio.co/assets/img/background.jpg");
+    background-image:url("https://glutenfreeradio.co/assets/img/background.jpg");
     background-position:center center;
     background-size:cover;
     background-attachment:fixed;
@@ -14198,10 +14198,10 @@ body:not(.collection-type-template-page).sqs-style-mode.info-page-layout-offset 
         background-image:none
     }
     body:not(.collection-type-template-page).mobile-background-image #outerWrapper,body:not(.collection-type-template-page).collection-layout-default.info-page-layout-poster.mobile-background-image #outerWrapper{
-        background-image:url("http://glutenfreeradio.co/assets/img/background.jpg");
+        background-image:url("https://glutenfreeradio.co/assets/img/background.jpg");
         background-position:top left;
         background-attachment: fixed;
-        background-image:url("http://glutenfreeradio.co/assets/img/background.jpg");
+        background-image:url("https://glutenfreeradio.co/assets/img/background.jpg");
         background-position:center center;
         background-size:cover;
         background-attachment:fixed;
@@ -14354,7 +14354,7 @@ body:not(.collection-type-template-page).sqs-style-mode.info-page-layout-offset 
     font-style:normal
 }
 .bg-image{
-    background-image:url("http://glutenfreeradio.co/assets/img/background.jpg");
+    background-image:url("https://glutenfreeradio.co/assets/img/background.jpg");
     background-position:center center;
     background-size:cover;
     background-attachment:fixed;
@@ -14504,7 +14504,7 @@ body:not(.collection-type-template-page).sqs-style-mode.info-page-layout-offset 
     font-style:normal
 }
 .page-bg-image{
-    background-image:url("http://glutenfreeradio.co/assets/img/background.jpg");
+    background-image:url("https://glutenfreeradio.co/assets/img/background.jpg");
     background-position:center center;
     background-size:cover;
     background-attachment:fixed;
@@ -14708,7 +14708,7 @@ body:not(.collection-type-template-page).sqs-style-mode.info-page-layout-offset 
      width: 100%;
      height: 100%;
      z-index: -10;
-     background: url(http://glutenfreeradio.co/assets/img/background.jpg) no-repeat center center;
+     background: url(https://glutenfreeradio.co/assets/img/background.jpg) no-repeat center center;
      -webkit-background-size: cover;
      -moz-background-size: cover;
      -o-background-size: cover;
