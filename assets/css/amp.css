@@ -1,6 +1,5 @@
-/*! Bassplate | MIT License | http://github.com/basscss/bassplate */
-
-/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */html {
+/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+html {
   font-family: sans-serif;
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -2091,6 +2090,16 @@ amp-carousel .ampstart-image-with-caption {
   display: block;
   padding: .5rem;
   line-height: 1rem
+}
+
+.header-logo {
+  display: block;
+  padding: .5rem;
+  line-height: 1rem
+  max-width: 450
+  -webkit-box-decoration-break: none;
+  box-decoration-break: none;
+  background: none
 }
 
 .ampstart-fullpage-hero-heading-text,.ampstart-image-fullpage-hero .ampstart-image-credit {
