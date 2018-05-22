@@ -14509,6 +14509,10 @@ body:not(.collection-type-template-page).sqs-style-mode.info-page-layout-offset 
     background-size:cover;
     background-attachment:fixed;
     background-repeat:no-repeat
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
 }
 .category-nav-font{
     font-family:"proxima-nova";
