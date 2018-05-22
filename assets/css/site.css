@@ -11789,7 +11789,10 @@ body:not(.tweak-product-quick-view-lightbox-show-close-button) .sqs-product-quic
 .page-bg-image{
     background-image:url("https://glutenfreeradio.co/assets/img/background.jpg");
     background-position:top left;
-    background-size:cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     background-attachment:fixed;
     background-repeat:no-repeat
     left: 0;
@@ -14510,7 +14513,10 @@ body:not(.collection-type-template-page).sqs-style-mode.info-page-layout-offset 
 .page-bg-image{
     background-image:url("https://glutenfreeradio.co/assets/img/background.jpg");
     background-position:center center;
-    background-size:cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     background-attachment:fixed;
     background-repeat:no-repeat
     left: 0;
