@@ -12972,7 +12972,9 @@ h3 a:hover,h3 a:focus{
     -webkit-box-sizing:border-box;
     -moz-box-sizing:border-box;
     box-sizing:border-box;
-    padding:30px
+    padding:30px;
+    position: fixed;
+    bottom: 89px;
 }
 #footer a,#footer a:visited{
     color:#fff !important
