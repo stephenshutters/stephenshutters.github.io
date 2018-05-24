@@ -14211,9 +14211,6 @@ body:not(.collection-type-template-page).sqs-style-mode.info-page-layout-offset 
     }
     body:not(.collection-type-template-page).mobile-background-image #outerWrapper,body:not(.collection-type-template-page).collection-layout-default.info-page-layout-poster.mobile-background-image #outerWrapper{
         background-image:url("https://glutenfreeradio.co/assets/img/background.jpg");
-        background-position:top left;
-        background-attachment: fixed;
-        background-image:url("https://glutenfreeradio.co/assets/img/background.jpg");
         background-position:center center;
         background-size:cover;
         background-attachment:fixed;
