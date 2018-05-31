@@ -12516,6 +12516,11 @@ body{
     min-height:100%;
     z-index:1
 }
+#outerWrapper:after{
+    clear: both;
+    content: "";
+    display: block;
+}
 .collection-type-template-page #outerWrapper{
     background-image:url("https://glutenfreeradio.co/assets/img/background.jpg");
     background-position:center center;
