@@ -13444,73 +13444,6 @@ html.no-touch .pagination .left.hide,html.no-touch .pagination .right.hide{
     top:auto;
     left:auto
 }
-#mobile-navigation{
-    font-size:13px
-}
-#mobile-navigation #mobile-navigation-label{
-    font-family:"Source Sans Pro",Tahoma,Arial,sans-serif;
-    font-weight:400;
-    line-height:1.25em;
-    letter-spacing:4px;
-    font-family:proxima-nova;
-    font-weight:300;
-    font-style:normal;
-    font-size:13px;
-    line-height:1.5em;
-    text-transform:uppercase;
-    letter-spacing:3px;
-    text-decoration:none
-}
-#mobile-navigation ul{
-    margin:2em 0 0 !important
-}
-#mobile-navigation ul li{
-    margin:1.25em 0;
-    font-family:"Source Sans Pro",Tahoma,Arial,sans-serif;
-    font-weight:400;
-    line-height:1.25em;
-    letter-spacing:4px;
-    font-family:proxima-nova;
-    font-weight:300;
-    font-style:normal;
-    font-size:13px;
-    line-height:1.5em;
-    text-transform:uppercase;
-    letter-spacing:3px;
-    text-decoration:none
-}
-#mobile-navigation ul li a,#mobile-navigation ul li a:visited{
-    color:rgba(255,255,255,.6)
-}
-#mobile-navigation ul li a:hover,#mobile-navigation ul li a:focus{
-    color:#fff
-}
-#mobile-navigation ul li.active-link>a{
-    color:#fff
-}
-#mobile-navigation ul li.active-folder .folder-parent>a.active-link{
-    color:#fff
-}
-#mobile-navigation .folder.dropdown-open{
-    margin-bottom:2em
-}
-#mobile-navigation .folder .folder-child{
-    display:none
-}
-#mobile-navigation .folder.dropdown-open .folder-child{
-    display:inline-block
-}
-#mobile-navigation .folder.dropdown-open .folder-parent>a:first-child:before{
-    content:'-'
-}
-#mobile-navigation .folder-parent ul{
-    margin:0 !important
-}
-#mobile-navigation .folder-parent>a:first-child:before{
-    content:'+';
-    margin-right:.5em;
-    font-size:13px
-}
 .info-page-layout-poster #innerWrapper{
     margin-bottom:85px
 }
@@ -13611,9 +13544,6 @@ a:hover,a:focus{
 .hide-info-page-dividers .site-desc:before,.hide-info-page-dividers .contact-info:before{
     margin:0 !important;
     background-color:transparent !important
-}
-body:not(.mobile-style-available) #mobile-navigation{
-    display:none
 }
 .comments-wrapper{
     margin:110px auto;
@@ -13853,9 +13783,6 @@ body:not(.collection-type-template-page).sqs-style-mode.info-page-layout-offset 
     display:none !important;
     visibility:hidden
 }
-#mobile-navigation{
-    display:none !important\9
-}
 .sqs-block-summary-v2 .summary-title,.sqs-block-summary-v2 .summary-heading{
     font-family:"proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-family:"proxima-nova";
@@ -13885,57 +13812,6 @@ body:not(.collection-type-template-page).sqs-style-mode.info-page-layout-offset 
 }
 .sqs-block-summary-v2 .summary-metadata-item a:hover,.sqs-block-summary-v2 .summary-metadata-item a:link:hover,.sqs-block-summary-v2 .summary-metadata-item a:visited:hover{
     color:rgba(255,255,255,.6)
-}
-#mobile-navigation{
-    width:100%;
-    padding:1em 0;
-    text-align:center
-}
-#mobile-navigation{
-    display:none;
-    cursor:pointer;
-    border-radius:0;
-    background:#000;
-    -moz-user-select:-moz-none;
-    -webkit-user-select:none;
-    -ms-user-select:none;
-    user-select:none
-}
-#mobile-navigation #mobile-navigation-label{
-    color:rgba(255,255,255,.6);
-    background:#000;
-    border-radius:0;
-    cursor:pointer
-}
-#mobile-navigation #mobile-navigation-label:after{
-    content:'Menu'
-}
-#mobile-navigation ul{
-    display:none;
-    list-style:none;
-    padding:0;
-    margin:1em 0 0 0
-}
-#mobile-navigation ul a{
-    color:rgba(255,255,255,.6);
-    text-decoration:none
-}
-#mobile-navigation.sqs-mobile-nav-open ul{
-    display:block
-}
-#mobile-navigation.sqs-mobile-nav-open #mobile-navigation-label:after{
-    content:'Close'
-}
-@media screen and (max-width:640px){
-    #main-navigation{
-        display:none
-    }
-    #mobile-navigation{
-        display:block
-    }
-}
-#mobile-navigation{
-    font-size:
 }
 @media only screen and (max-width:1024px){
     #innerWrapper{
