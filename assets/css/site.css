@@ -15,21 +15,9 @@ html{
     font-family:sans-serif;
     -webkit-text-size-adjust:100%;
     -ms-text-size-adjust:100%;
-    min-height:100%;
 }
 body{
     margin:0;
-    min-height:100%;
-    background-image:url("https://glutenfreeradio.co/assets/img/background.jpg");
-    background-position:center center;
-    background-size:cover;
-    background-attachment:fixed;
-    background-repeat:no-repeat;
-    position:absolute;
-    min-width:100%;
-    width:100%;
-    min-height:100%;
-    z-index:1;
 }
 a:focus{
     outline:thin dotted
