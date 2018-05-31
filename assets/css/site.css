@@ -11638,11 +11638,18 @@ body:not(.tweak-product-quick-view-lightbox-show-close-button) .sqs-product-quic
     text-transform:uppercase
 }
 .bg-image{
-    background-image:url("https://glutenfreeradio.co/assets/img/background.jpg");
-    background-position:top left;
-    background-size:cover;
-    background-attachment:fixed;
-    background-repeat:no-repeat
+  background-image:url("https://glutenfreeradio.co/assets/img/background.jpg");
+  background-position:top left;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  background-attachment:fixed;
+  background-repeat:no-repeat
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
 }
 .site-title-home{
     font-family:"Voltaire",Georgia,serif;
