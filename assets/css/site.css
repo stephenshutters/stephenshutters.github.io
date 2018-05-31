@@ -12513,7 +12513,7 @@ body{
     position:absolute;
     min-width:100%;
     width:100%;
-    min-height:100%;
+    min-height:100vh;
     z-index:1;
 }
 .collection-type-template-page #outerWrapper{
@@ -12524,7 +12524,7 @@ body{
     background-repeat:no-repeat;
     min-width:100%;
     width:100%;
-    min-height:100%;
+    min-height:100vh;
     z-index:1
 }
 h1{
