@@ -5621,12 +5621,6 @@ body:not(.event-like-and-share-buttons) .event-meta-socialicon-container{
     width:100% !important;
     height:100% !important
 }
-@media screen and (max-width:640px){
-    .sqs-block-soundcloud.isPlaylist .sqs-intrinsic{
-        padding-bottom:0 !important;
-        height:400px !important
-    }
-}
 .sqs-block-opentable-hidden{
     display:none !important
 }
@@ -6191,12 +6185,6 @@ body:not(.event-like-and-share-buttons) .event-meta-socialicon-container{
 }
 .small-button-shape-pill .sqs-block-button .sqs-block-button-element--small,.medium-button-shape-pill .sqs-block-button .sqs-block-button-element--medium,.large-button-shape-pill .sqs-block-button .sqs-block-button-element--large{
     border-radius:300px
-}
-@media screen and (max-width:640px){
-    .sqs-block-button .sqs-block-button-element--large{
-        padding:21px 34px;
-        font-size:15px
-    }
 }
 .sqs-search-ui-button-wrapper{
     position:relative
@@ -11079,11 +11067,6 @@ body:not(.button-style-default).button-corner-style-pill .opentable-block .OT_Fi
 .tweak-product-quick-view-button-style-bar .sqs-product-quick-view-button-wrapper .sqs-product-quick-view-button{
     width:100%
 }
-@media only screen and (max-width:640px){
-    .sqs-product-quick-view-button-wrapper .sqs-product-quick-view-button-wrapper{
-        display:none !important
-    }
-}
 .sqs-product-quick-view-lightbox .sqs-product-quick-view-content{
     padding:15px
 }
@@ -14051,186 +14034,9 @@ body:not(.collection-type-template-page).sqs-style-mode.info-page-layout-offset 
         margin:1em 1.5em .5em
     }
 }
-@media only screen and (max-width:800px) and (min-width:641px){
+@media only screen and (max-width:800px) and (min-width:601px){
     #outerWrapper{
         overflow:hidden
-    }
-}
-@media only screen and (max-width:640px){
-    .sqs-layout [class*=sqs-col]{
-        float:none !important;
-        width:auto !important
-    }
-    .sqs-layout .spacer-block{
-        display:none
-    }
-    .sqs-layout .sqs-row .sqs-block:first-child{
-        padding-top:17px !important
-    }
-    .sqs-layout .sqs-row .sqs-block:last-child{
-        padding-bottom:17px !important
-    }
-    .sqs-layout .sqs-row+.sqs-row,.sqs-layout .sqs-row+.sqs-block{
-        margin-top:0 !important
-    }
-    .sqs-gallery-design-grid-slide{
-        width:50% !important;
-        clear:none !important
-    }
-    .comments-wrapper{
-        margin:40px auto 0;
-        width:100%
-    }
-    .comments-wrapper h3,.comments-wrapper .comment-sort,.comments-wrapper .subscribe,.comments-wrapper .squarespace-comments .comments-content .comment-list .comment .comment-header .user-info .author,.comments-wrapper .squarespace-comments .comments-content .comment-list .comment .comment-header .user-info .date,.comments-wrapper .squarespace-comments .new-comment-area .comment-btn-wrapper .btn-text,.comments-wrapper .squarespace-comments .new-comment-area .comment-btn-wrapper .comment-btn{
-        font-size:14px !important
-    }
-    body:not(.collection-type-template-page) #outerWrapper,body:not(.collection-type-template-page).collection-layout-default.info-page-layout-poster #outerWrapper{
-        background-image:none
-    }
-    body:not(.collection-type-template-page).mobile-background-image #outerWrapper,body:not(.collection-type-template-page).collection-layout-default.info-page-layout-poster.mobile-background-image #outerWrapper{
-        background-image:url("https://glutenfreeradio.co/assets/img/background.jpg");
-        background-position:center center;
-        background-size:cover;
-        background-attachment:fixed;
-        background-repeat:no-repeat
-    }
-    body:not(.collection-type-template-page) #innerWrapper,body:not(.collection-type-template-page).collection-layout-default.info-page-layout-poster #innerWrapper{
-        margin-left:0;
-        margin-right:0
-    }
-    .squarespace-comments .header-controls .controls{
-        padding-bottom:10px
-    }
-    .squarespace-comments .header-controls .controls .comment-sort{
-        margin-left:0
-    }
-    .squarespace-comments .comments-content .comment-list .comment .comment-header .user-info{
-        margin-right:25px
-    }
-    .collection-type-blog .hentry,.collection-type-gallery .hentry{
-        margin:0 0 40px
-    }
-    body:not(.collection-type-template-page) #content,body:not(.collection-type-template-page).collection-layout-default.info-page-layout-poster #content{
-        padding:25px !important
-    }
-    body:not(.collection-type-template-page) .promoted-content,body:not(.collection-type-template-page).collection-layout-default.info-page-layout-poster .promoted-content{
-        margin:0 0 10px
-    }
-    body:not(.collection-type-template-page) #title-area,body:not(.collection-type-template-page).collection-layout-default.info-page-layout-poster #title-area{
-        padding:25px
-    }
-    body:not(.collection-type-template-page) #title-area h1,body:not(.collection-type-template-page).collection-layout-default.info-page-layout-poster #title-area h1{
-        font-size:36px
-    }
-    body:not(.collection-type-template-page) #title-area h1 img,body:not(.collection-type-template-page).collection-layout-default.info-page-layout-poster #title-area h1 img{
-        max-width:80% !important
-    }
-    body:not(.collection-type-template-page) #title-area p.site-tagline,body:not(.collection-type-template-page).collection-layout-default.info-page-layout-poster #title-area p.site-tagline{
-        font-size:15px
-    }
-    body:not(.collection-type-template-page) #title-area .contact-info,body:not(.collection-type-template-page).collection-layout-default.info-page-layout-poster #title-area .contact-info{
-        margin-top:0
-    }
-    body:not(.collection-type-template-page) #title-area .contact-info p,body:not(.collection-type-template-page).collection-layout-default.info-page-layout-poster #title-area .contact-info p{
-        font-size:12px
-    }
-    body:not(.collection-type-template-page) .hentry:last-child,body:not(.collection-type-template-page).collection-layout-default.info-page-layout-poster .hentry:last-child{
-        margin:0
-    }
-    .collection-type-template-page #title-area,.collection-type-template-page.info-page-layout-poster #title-area,.collection-type-template-page.info-page-layout-poster.freeform-text-on-info-page #title-area,.collection-type-template-page.info-page-layout-business-card #title-area,.collection-type-template-page.info-page-layout-business-card.freeform-text-on-info-page #title-area,.collection-type-template-page.info-page-layout-offset #title-area,.collection-type-template-page.info-page-layout-offset.freeform-text-on-info-page #title-area,.collection-type-template-page.info-page-content-overlay #title-area,.collection-type-template-page.info-page-content-overlay.freeform-text-on-info-page #title-area,body:not(.info-page-layout-business-card).collection-type-template-page.info-page-content-overlay #title-area,.collection-type-template-page #homeBlockField,.collection-type-template-page.info-page-layout-poster #homeBlockField,.collection-type-template-page.info-page-layout-poster.freeform-text-on-info-page #homeBlockField,.collection-type-template-page.info-page-layout-business-card #homeBlockField,.collection-type-template-page.info-page-layout-business-card.freeform-text-on-info-page #homeBlockField,.collection-type-template-page.info-page-layout-offset #homeBlockField,.collection-type-template-page.info-page-layout-offset.freeform-text-on-info-page #homeBlockField,.collection-type-template-page.info-page-content-overlay #homeBlockField,.collection-type-template-page.info-page-content-overlay.freeform-text-on-info-page #homeBlockField,body:not(.info-page-layout-business-card).collection-type-template-page.info-page-content-overlay #homeBlockField{
-        position:relative;
-        top:0;
-        margin-top:30px !important;
-        margin-bottom:85px
-    }
-    .collection-type-template-page #title-area h1,.collection-type-template-page.info-page-layout-poster #title-area h1,.collection-type-template-page.info-page-layout-poster.freeform-text-on-info-page #title-area h1,.collection-type-template-page.info-page-layout-business-card #title-area h1,.collection-type-template-page.info-page-layout-business-card.freeform-text-on-info-page #title-area h1,.collection-type-template-page.info-page-layout-offset #title-area h1,.collection-type-template-page.info-page-layout-offset.freeform-text-on-info-page #title-area h1,.collection-type-template-page.info-page-content-overlay #title-area h1,.collection-type-template-page.info-page-content-overlay.freeform-text-on-info-page #title-area h1,body:not(.info-page-layout-business-card).collection-type-template-page.info-page-content-overlay #title-area h1,.collection-type-template-page #homeBlockField h1,.collection-type-template-page.info-page-layout-poster #homeBlockField h1,.collection-type-template-page.info-page-layout-poster.freeform-text-on-info-page #homeBlockField h1,.collection-type-template-page.info-page-layout-business-card #homeBlockField h1,.collection-type-template-page.info-page-layout-business-card.freeform-text-on-info-page #homeBlockField h1,.collection-type-template-page.info-page-layout-offset #homeBlockField h1,.collection-type-template-page.info-page-layout-offset.freeform-text-on-info-page #homeBlockField h1,.collection-type-template-page.info-page-content-overlay #homeBlockField h1,.collection-type-template-page.info-page-content-overlay.freeform-text-on-info-page #homeBlockField h1,body:not(.info-page-layout-business-card).collection-type-template-page.info-page-content-overlay #homeBlockField h1{
-        font-size:54px;
-        margin-bottom:20px
-    }
-    .collection-type-template-page #title-area .contact-info,.collection-type-template-page.info-page-layout-poster #title-area .contact-info,.collection-type-template-page.info-page-layout-poster.freeform-text-on-info-page #title-area .contact-info,.collection-type-template-page.info-page-layout-business-card #title-area .contact-info,.collection-type-template-page.info-page-layout-business-card.freeform-text-on-info-page #title-area .contact-info,.collection-type-template-page.info-page-layout-offset #title-area .contact-info,.collection-type-template-page.info-page-layout-offset.freeform-text-on-info-page #title-area .contact-info,.collection-type-template-page.info-page-content-overlay #title-area .contact-info,.collection-type-template-page.info-page-content-overlay.freeform-text-on-info-page #title-area .contact-info,body:not(.info-page-layout-business-card).collection-type-template-page.info-page-content-overlay #title-area .contact-info,.collection-type-template-page #homeBlockField .contact-info,.collection-type-template-page.info-page-layout-poster #homeBlockField .contact-info,.collection-type-template-page.info-page-layout-poster.freeform-text-on-info-page #homeBlockField .contact-info,.collection-type-template-page.info-page-layout-business-card #homeBlockField .contact-info,.collection-type-template-page.info-page-layout-business-card.freeform-text-on-info-page #homeBlockField .contact-info,.collection-type-template-page.info-page-layout-offset #homeBlockField .contact-info,.collection-type-template-page.info-page-layout-offset.freeform-text-on-info-page #homeBlockField .contact-info,.collection-type-template-page.info-page-content-overlay #homeBlockField .contact-info,.collection-type-template-page.info-page-content-overlay.freeform-text-on-info-page #homeBlockField .contact-info,body:not(.info-page-layout-business-card).collection-type-template-page.info-page-content-overlay #homeBlockField .contact-info{
-        margin-bottom:20px
-    }
-    .collection-type-template-page #title-area .contact-info p,.collection-type-template-page.info-page-layout-poster #title-area .contact-info p,.collection-type-template-page.info-page-layout-poster.freeform-text-on-info-page #title-area .contact-info p,.collection-type-template-page.info-page-layout-business-card #title-area .contact-info p,.collection-type-template-page.info-page-layout-business-card.freeform-text-on-info-page #title-area .contact-info p,.collection-type-template-page.info-page-layout-offset #title-area .contact-info p,.collection-type-template-page.info-page-layout-offset.freeform-text-on-info-page #title-area .contact-info p,.collection-type-template-page.info-page-content-overlay #title-area .contact-info p,.collection-type-template-page.info-page-content-overlay.freeform-text-on-info-page #title-area .contact-info p,body:not(.info-page-layout-business-card).collection-type-template-page.info-page-content-overlay #title-area .contact-info p,.collection-type-template-page #homeBlockField .contact-info p,.collection-type-template-page.info-page-layout-poster #homeBlockField .contact-info p,.collection-type-template-page.info-page-layout-poster.freeform-text-on-info-page #homeBlockField .contact-info p,.collection-type-template-page.info-page-layout-business-card #homeBlockField .contact-info p,.collection-type-template-page.info-page-layout-business-card.freeform-text-on-info-page #homeBlockField .contact-info p,.collection-type-template-page.info-page-layout-offset #homeBlockField .contact-info p,.collection-type-template-page.info-page-layout-offset.freeform-text-on-info-page #homeBlockField .contact-info p,.collection-type-template-page.info-page-content-overlay #homeBlockField .contact-info p,.collection-type-template-page.info-page-content-overlay.freeform-text-on-info-page #homeBlockField .contact-info p,body:not(.info-page-layout-business-card).collection-type-template-page.info-page-content-overlay #homeBlockField .contact-info p{
-        font-size:10.4px
-    }
-    .collection-type-template-page.info-page-content-overlay #title-area,.collection-type-template-page.info-page-content-overlay #homeBlockField{
-        padding:25px
-    }
-    .collection-layout-default #main-navigation,body:not(.collection-type-template-page) #main-navigation{
-        width:100%
-    }
-    .sqs-block.quote-block .sqs-block-content .quote blockquote{
-        margin:1em 0 .5em
-    }
-    .sqs-block.quote-block .sqs-block-content .source{
-        margin:0 0 1em
-    }
-    .sqs-block.html-block .sqs-block-content blockquote{
-        margin:1em 0 .5em
-    }
-    .category-nav-toggle-label{
-        display:block;
-        visibility:visible;
-        width:100%;
-        z-index:2;
-        position:absolute;
-        top:.5em;
-        right:10px;
-        cursor:pointer;
-        font-size:14px;
-        line-height:1.8em;
-        text-align:right
-    }
-    .category-nav-toggle-label:after{
-        font-size:20px;
-        content:"+";
-        display:block;
-        text-align:right
-    }
-    #categoryNav{
-        margin-bottom:25px;
-        position:relative;
-        padding:0 10px;
-        background-color:rgba(150,150,150,.1)
-    }
-    #categoryNav ul{
-        text-align:left;
-        font-size:14px;
-        margin:0px 10% 0 0;
-        line-height:1.8em
-    }
-    #categoryNav ul li{
-        margin:0;
-        padding-right:0 !important;
-        display:none
-    }
-    #categoryNav ul li.filter{
-        display:block;
-        visibility:visible
-    }
-    #categoryNav ul li a{
-        display:block;
-        font-size:14px;
-        padding:.5em 0
-    }
-    .page-alignment-center #categoryNav ul,.page-alignment-right #categoryNav ul{
-        text-align:left
-    }
-    .page-alignment-center #categoryNav ul li,.page-alignment-right #categoryNav ul li{
-        margin-left:0;
-        margin-right:0
-    }
-    #categoryNav #categoryNavToggle:checked+.category-nav-toggle-label{
-        z-index:0
-    }
-    #categoryNav #categoryNavToggle:checked+.category-nav-toggle-label:after{
-        content:'–'
-    }
-    #categoryNav #categoryNavToggle:checked~.category-nav ul{
-        z-index:2
-    }
-    #categoryNav #categoryNavToggle:checked~.category-nav ul li:not(.filter){
-        display:block
     }
 }
 .summary-heading-font{
