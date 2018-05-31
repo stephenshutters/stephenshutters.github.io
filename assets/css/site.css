@@ -18,7 +18,8 @@ html{
     min-height:100%;
 }
 body{
-    margin:0
+    margin:0;
+    min-height:100%;
 }
 a:focus{
     outline:thin dotted
