@@ -12504,6 +12504,9 @@ body{
     color:#fff;
     background-color:#000
 }
+#desktop-content{
+    overflow: hidden;
+}
 #outerWrapper{
     background-image:url("https://glutenfreeradio.co/assets/img/background.jpg");
     background-position:center center;
@@ -12515,7 +12518,6 @@ body{
     width:100%;
     min-height:100%;
     z-index:1;
-    overflow: hidden;
 }
 .collection-type-template-page #outerWrapper{
     background-image:url("https://glutenfreeradio.co/assets/img/background.jpg");
