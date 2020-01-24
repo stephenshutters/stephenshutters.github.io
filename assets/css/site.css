@@ -11621,7 +11621,7 @@ body:not(.tweak-product-quick-view-lightbox-show-close-button) .sqs-product-quic
     text-transform:uppercase
 }
 .bg-image{
-  background-image:url("https://glutenfreeradio.co/assets/img/background.jpg");
+  background-image:url("https://glutenfreeradio.com/assets/img/background.jpg");
   background-position:top left;
   -webkit-background-size:cover;
   -moz-background-size:cover;
@@ -11777,7 +11777,7 @@ body:not(.tweak-product-quick-view-lightbox-show-close-button) .sqs-product-quic
     line-height:1.6em
 }
 .page-bg-image{
-    background-image:url("https://glutenfreeradio.co/assets/img/background.jpg");
+    background-image:url("https://glutenfreeradio.com/assets/img/background.jpg");
     background-position:top left;
     -webkit-background-size:cover;
     -moz-background-size:cover;
@@ -12488,7 +12488,7 @@ body{
     background-color:#000
 }
 #outerWrapper{
-    background-image:url("https://glutenfreeradio.co/assets/img/background.jpg");
+    background-image:url("https://glutenfreeradio.com/assets/img/background.jpg");
     background-position:center center;
     background-size:cover;
     background-attachment:fixed;
@@ -12500,7 +12500,7 @@ body{
     z-index:1;
 }
 .collection-type-template-page #outerWrapper{
-    background-image:url("https://glutenfreeradio.co/assets/img/background.jpg");
+    background-image:url("https://glutenfreeradio.com/assets/img/background.jpg");
     background-position:center center;
     background-size:cover;
     background-attachment:fixed;
@@ -14047,7 +14047,7 @@ body:not(.collection-type-template-page).sqs-style-mode.info-page-layout-offset 
     font-style:normal
 }
 .bg-image{
-    background-image:url("https://glutenfreeradio.co/assets/img/background.jpg");
+    background-image:url("https://glutenfreeradio.com/assets/img/background.jpg");
     background-position:center center;
     background-size:cover;
     background-attachment:fixed;
@@ -14197,7 +14197,7 @@ body:not(.collection-type-template-page).sqs-style-mode.info-page-layout-offset 
     font-style:normal
 }
 .page-bg-image{
-    background-image:url("https://glutenfreeradio.co/assets/img/background.jpg");
+    background-image:url("https://glutenfreeradio.com/assets/img/background.jpg");
     background-position:center center;
     -webkit-background-size:cover;
     -moz-background-size:cover;
